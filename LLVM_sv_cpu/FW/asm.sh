@@ -2,7 +2,7 @@
 
 D="$( cd "$( dirname "${BASH_SOURCE[0]}" )/" >/dev/null 2>&1 && pwd )"
 
-pushd $D/Compiler/Config_CPU/
+pushd $D/../SW/Config_CPU/
 make
 popd
 
@@ -11,7 +11,7 @@ B=`basename ${ASM%%.sv.asm}`
 W=`dirname ${ASM}`
 HEX="$W/build/$B.sv.hex"
 PROC="$W/build/$B.proc.sv.asm"
-COMP=$D/Compiler/Config_CPU/out/sv-asm.jl
+COMP=$D/../SW/Config_CPU/out/sv-asm.jl
 
 mkdir -p "$W/build/"
 if [ $ASM -nt $HEX ] || [ $COMP -nt $HEX ]
@@ -38,7 +38,7 @@ then
 
 	if [ "$2" = "" ]
 	then
-		$D/Compiler/Config_CPU/tools/objcopy.jl \
+		$D/../SW/Config_CPU/tools/objcopy.jl \
 			--i-ihex $HEX \
 			--o-vhd-pkg $D/../FPGA/tb/tb__cpu/machine_code.gen.vhd \
 			--o-c-h $D/../FPGA/FW/test__cpu/11_exec_hardcoded/src/machine_code.gen.h
