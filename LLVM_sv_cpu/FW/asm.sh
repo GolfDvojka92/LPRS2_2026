@@ -36,6 +36,8 @@ then
 		exit $R
 	fi
 
+	exit 0
+	# Not needed.
 	if [ "$2" = "" ]
 	then
 		$D/../SW/Config_CPU/tools/objcopy.jl \

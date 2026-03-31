@@ -26,6 +26,7 @@ GEN_ISET=./tools/gen_instr_set.jl
 # Rules.
 
 default: ${ASM}
+install: clang_check vscode
 
 .PHONY: clang_check
 clang_check:
@@ -35,19 +36,20 @@ clang_check:
 		sudo apt -y install clang; \
 	fi
 
-${ISET_P} ${ASM}: clang_check vscode ${GEN_ISET} ${ISET_DEF}
+.PHONY: vscode
+vscode: ~/.vscode/extensions/micuri.sv-asm*
+~/.vscode/extensions/micuri.sv-asm*:
+	cp -r src/micuri.sv-asm* ~/.vscode/extensions/
+	rm -f ~/.vscode/extensions/extensions.json
+
+
+${ISET_P} ${ASM}: ${GEN_ISET} ${ISET_DEF}
 	mkdir -p out
 	${GEN_ISET} --i-isd ${ISET_DEF} --o-asm ${ASM} --o-vhd ./out/instr_set.gen.vhd
 	sed -i -n '/^[ ]*#=.*=#$$/!p' ${ASM}
 	sed -i 's/#=.*=#//g' ${ASM}
 	#cp ./out/instr_set.gen.vhd ${ISET_P}
 
-
-.PHONY: vscode
-vscode: ~/.vscode/extensions/micuri.sv-asm*
-~/.vscode/extensions/micuri.sv-asm*:
-	cp -r src/micuri.sv-asm* ~/.vscode/extensions/
-	rm -f ~/.vscode/extensions/extensions.json
 
 
 ###############################################################################
