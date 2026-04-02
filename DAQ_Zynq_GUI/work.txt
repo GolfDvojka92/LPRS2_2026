@@ -1,7 +1,7 @@
 
 - Python calls julia
 - github
-	- https://github.com/zoran-grujic/FAP-TiePie
+	- https://github.com/MilosSubotic/FAP_GUI
 		-T Try run it
 		-T Read code
 		-T Need to exchange TiePie scope with adc_lvds
