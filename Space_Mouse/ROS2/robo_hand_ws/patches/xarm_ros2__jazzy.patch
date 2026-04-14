@@ -1,0 +1,475 @@
+diff --git a/xarm_api/config/xarm_params.yaml b/xarm_api/config/xarm_params.yaml
+index 6ed1ffd..8f1fa67 100644
+--- a/xarm_api/config/xarm_params.yaml
++++ b/xarm_api/config/xarm_params.yaml
+@@ -26,16 +26,16 @@ ufactory_driver:
+       ft_sensor_set_zero: false
+       set_linear_track_stop: false
+       clean_linear_track_error: false
+-      open_lite6_gripper: false
+-      close_lite6_gripper: false
+-      stop_lite6_gripper: false
++      open_lite6_gripper: true
++      close_lite6_gripper: true
++      stop_lite6_gripper: true
+       get_state: false
+       get_cmdnum: false
+       get_vacuum_gripper: false
+       get_gripper_err_code: false
+       get_bio_gripper_status: false
+       get_bio_gripper_error: false
+-      get_reduced_mode: false
++      get_reduced_mode: true
+       get_report_tau_or_i: false
+       ft_sensor_app_get: false
+       get_ft_sensor_error: false
+@@ -58,7 +58,7 @@ ufactory_driver:
+       set_bio_gripper_speed: false
+       set_collision_rebound: false
+       set_fence_mode: false
+-      set_reduced_mode: false
++      set_reduced_mode: true
+       set_self_collision_detection: false
+       set_simulation_robot: false
+       set_baud_checkset_enable: false
+@@ -92,7 +92,7 @@ ufactory_driver:
+       set_joint_maxacc: false
+       set_gripper_speed: false
+       set_reduced_max_tcp_speed: false
+-      set_reduced_max_joint_speed: false
++      set_reduced_max_joint_speed: true
+       set_gravity_direction: false
+       set_tcp_offset: false
+       set_world_offset: false
+@@ -114,7 +114,7 @@ ufactory_driver:
+       get_tgpio_analog: false
+       get_cgpio_analog: false
+       set_tgpio_digital: false
+-      set_cgpio_digital: false
++      set_cgpio_digital: true
+       set_tgpio_digital_with_xyz: false
+       set_cgpio_digital_with_xyz: false
+       set_cgpio_analog: false
+diff --git a/xarm_controller/config/lite6_controllers.yaml b/xarm_controller/config/lite6_controllers.yaml
+index c779258..c843d37 100644
+--- a/xarm_controller/config/lite6_controllers.yaml
++++ b/xarm_controller/config/lite6_controllers.yaml
+@@ -26,12 +26,12 @@ lite6_traj_controller:
+     constraints:
+       goal_time: 0.5
+       stopped_velocity_tolerance: 0.0
+-      joint1: {trajectory: 1.0, goal: 0.01}
+-      joint2: {trajectory: 1.0, goal: 0.01}
+-      joint3: {trajectory: 1.0, goal: 0.01}
+-      joint4: {trajectory: 1.0, goal: 0.01}
+-      joint5: {trajectory: 1.0, goal: 0.01}
+-      joint6: {trajectory: 1.0, goal: 0.01}
++      joint1: {trajectory: 2.0, goal: 0.01}
++      joint2: {trajectory: 2.0, goal: 0.01}
++      joint3: {trajectory: 2.0, goal: 0.01}
++      joint4: {trajectory: 2.0, goal: 0.01}
++      joint5: {trajectory: 2.0, goal: 0.01}
++      joint6: {trajectory: 2.0, goal: 0.01}
+     interface_name: position
+     state_publish_rate: 25.0
+     action_monitor_rate: 10.0
+diff --git a/xarm_moveit_config/config/lite6/kinematics.yaml b/xarm_moveit_config/config/lite6/kinematics.yaml
+index f5173f6..e0b3d9f 100755
+--- a/xarm_moveit_config/config/lite6/kinematics.yaml
++++ b/xarm_moveit_config/config/lite6/kinematics.yaml
+@@ -1,5 +1,6 @@
+ lite6:
+-  kinematics_solver: kdl_kinematics_plugin/KDLKinematicsPlugin
++  kinematics_solver: bio_ik/BioIKKinematicsPlugin
++  #kinematics_solver: kdl_kinematics_plugin/KDLKinematicsPlugin
+   # kinematics_solver: trac_ik_kinematics_plugin/TRAC_IKKinematicsPlugin
+   kinematics_solver_search_resolution: 0.005
+   kinematics_solver_timeout: 0.005
+diff --git a/xarm_moveit_servo/config/xarm_moveit_servo_config.yaml b/xarm_moveit_servo/config/xarm_moveit_servo_config.yaml
+index 400be8d..2801e6b 100644
+--- a/xarm_moveit_servo/config/xarm_moveit_servo_config.yaml
++++ b/xarm_moveit_servo/config/xarm_moveit_servo_config.yaml
+@@ -7,10 +7,10 @@ use_gazebo: false # Whether the robot is started in a Gazebo simulation environm
+ command_in_type: "speed_units" # "unitless"> in the range [-1:1], as if from joystick. "speed_units"> cmds are in m/s and rad/s
+ scale:
+   # Scale parameters are only used if command_in_type=="unitless"
+-  linear:  0.4  # Max linear velocity. Meters per publish_period. Unit is [m/s]. Only used for Cartesian commands.
+-  rotational:  0.8 # Max angular velocity. Rads per publish_period. Unit is [rad/s]. Only used for Cartesian commands.
++  linear:  0.2  # Max linear velocity. Meters per publish_period. Unit is [m/s]. Only used for Cartesian commands.
++  rotational:  0.2 # Max angular velocity. Rads per publish_period. Unit is [rad/s]. Only used for Cartesian commands.
+   # Max joint angular/linear velocity. Rads or Meters per publish period. Only used for joint commands on joint_command_in_topic.
+-  joint: 0.5
++  joint: 0.2
+ 
+ ## Properties of outgoing commands
+ publish_period: 0.01  # 1/Nominal publish rate [seconds]
+diff --git a/xarm_moveit_servo/launch/_robot_moveit_servo_fake.launch.py b/xarm_moveit_servo/launch/_robot_moveit_servo_fake.launch.py
+index 914fc4f..d6c3d70 100644
+--- a/xarm_moveit_servo/launch/_robot_moveit_servo_fake.launch.py
++++ b/xarm_moveit_servo/launch/_robot_moveit_servo_fake.launch.py
+@@ -21,6 +21,15 @@ from launch.event_handlers import OnProcessExit
+ from uf_ros_lib.moveit_configs_builder import MoveItConfigsBuilder
+ from uf_ros_lib.uf_robot_utils import load_yaml, generate_ros2_control_params_temp_file
+ 
++def parse_bool(s):
++    sl = s.lower()
++    t = sl in ['true', '1', 'yes', 'y']
++    f = sl in ['false', '0', 'no', 'n']
++    if t:
++        return True
++    if f:
++        return False
++    raise TypeError(f'Cannot parse {s} to bool!')
+ 
+ def launch_setup(context, *args, **kwargs):
+     robot_ip = LaunchConfiguration('robot_ip', default='')
+@@ -68,6 +77,8 @@ def launch_setup(context, *args, **kwargs):
+     joystick_type = LaunchConfiguration('joystick_type', default=1)
+     ros_namespace = LaunchConfiguration('ros_namespace', default='').perform(context)
+ 
++    with_planning = LaunchConfiguration('with_planning', default=False)
++
+     moveit_config_package_name = 'xarm_moveit_config'
+     controllers_name = 'controllers' if ros2_control_plugin.perform(context) == 'uf_robot_hardware/UFRobotSystemHardware' else 'fake_controllers'
+     xarm_type = '{}{}'.format(robot_type.perform(context), dof.perform(context) if robot_type.perform(context) in ('xarm', 'lite') else '')
+@@ -209,12 +220,12 @@ def launch_setup(context, *args, **kwargs):
+         package='rclcpp_components',
+         executable='component_container',
+         composable_node_descriptions=[
+-            ComposableNode(
+-                package='robot_state_publisher',
+-                plugin='robot_state_publisher::RobotStatePublisher',
+-                name='robot_state_publisher',
+-                parameters=[robot_description_parameters],
+-            ),
++            #ComposableNode(
++            #    package='robot_state_publisher',
++            #    plugin='robot_state_publisher::RobotStatePublisher',
++            #    name='robot_state_publisher',
++            #    parameters=[robot_description_parameters],
++            #),
+             ComposableNode(
+                 package='tf2_ros',
+                 plugin='tf2_ros::StaticTransformBroadcasterNode',
+@@ -258,16 +269,16 @@ def launch_setup(context, *args, **kwargs):
+         output='screen',
+     )
+ 
+-    # robot_state_publisher_node = Node(
+-    #     package='robot_state_publisher',
+-    #     executable='robot_state_publisher',
+-    #     output='screen',
+-    #     parameters=[moveit_config.robot_description],
+-    #     remappings=[
+-    #         # ('/tf', 'tf'),
+-    #         # ('/tf_static', 'tf_static'),
+-    #     ]
+-    # )
++    robot_state_publisher_node = Node(
++        package='robot_state_publisher',
++        executable='robot_state_publisher',
++        output='screen',
++        parameters=[moveit_config.robot_description],
++        remappings=[
++            # ('/tf', 'tf'),
++            # ('/tf_static', 'tf_static'),
++        ]
++    )
+ 
+     # servo_node = Node(
+     #     package="moveit_servo",
+@@ -295,22 +306,28 @@ def launch_setup(context, *args, **kwargs):
+         output="screen",
+     )
+ 
+-    return [
+-        # robot_state_publisher_node,
+-        # RegisterEventHandler(
+-        #     event_handler=OnProcessExit(
+-        #         target_action=traj_controller_node,
+-        #         on_exit=container,
+-        #     )
+-        # ),
+-        rviz_node,
+-        joint_state_broadcaster,
+-        ros2_control_launch,
+-        # servo_node,
+-        container,
+-        joystick_node,
+-        traj_controller_node,
+-    ] + controller_nodes
++    if parse_bool(with_planning.perform(context)):
++        return [
++            container,
++            joystick_node
++        ]
++    else:
++        return [
++            robot_state_publisher_node,
++            # RegisterEventHandler(
++            #     event_handler=OnProcessExit(
++            #         target_action=traj_controller_node,
++            #         on_exit=container,
++            #     )
++            # ),
++            rviz_node,
++            joint_state_broadcaster,
++            ros2_control_launch,
++            # servo_node,
++            container,
++            joystick_node,
++            traj_controller_node,
++        ] + controller_nodes
+ 
+ 
+ def generate_launch_description():
+diff --git a/xarm_moveit_servo/launch/_robot_moveit_servo_realmove.launch.py b/xarm_moveit_servo/launch/_robot_moveit_servo_realmove.launch.py
+index 172f584..51826fd 100644
+--- a/xarm_moveit_servo/launch/_robot_moveit_servo_realmove.launch.py
++++ b/xarm_moveit_servo/launch/_robot_moveit_servo_realmove.launch.py
+@@ -21,6 +21,15 @@ from launch.event_handlers import OnProcessExit
+ from uf_ros_lib.moveit_configs_builder import MoveItConfigsBuilder
+ from uf_ros_lib.uf_robot_utils import load_yaml, generate_ros2_control_params_temp_file
+ 
++def parse_bool(s):
++    sl = s.lower()
++    t = sl in ['true', '1', 'yes', 'y']
++    f = sl in ['false', '0', 'no', 'n']
++    if t:
++        return True
++    if f:
++        return False
++    raise TypeError(f'Cannot parse {s} to bool!')
+ 
+ def launch_setup(context, *args, **kwargs):
+     robot_ip = LaunchConfiguration('robot_ip', default='')
+@@ -68,6 +77,8 @@ def launch_setup(context, *args, **kwargs):
+     joystick_type = LaunchConfiguration('joystick_type', default=1)
+     ros_namespace = LaunchConfiguration('ros_namespace', default='').perform(context)
+ 
++    with_planning = LaunchConfiguration('with_planning', default=False)
++
+     moveit_config_package_name = 'xarm_moveit_config'
+     controllers_name = 'controllers' if ros2_control_plugin.perform(context) == 'uf_robot_hardware/UFRobotSystemHardware' else 'fake_controllers'
+     xarm_type = '{}{}'.format(robot_type.perform(context), dof.perform(context) if robot_type.perform(context) in ('xarm', 'lite') else '')
+@@ -207,12 +218,12 @@ def launch_setup(context, *args, **kwargs):
+         package='rclcpp_components',
+         executable='component_container',
+         composable_node_descriptions=[
+-            ComposableNode(
+-                package='robot_state_publisher',
+-                plugin='robot_state_publisher::RobotStatePublisher',
+-                name='robot_state_publisher',
+-                parameters=[robot_description_parameters],
+-            ),
++            #ComposableNode(
++            #    package='robot_state_publisher',
++            #    plugin='robot_state_publisher::RobotStatePublisher',
++            #    name='robot_state_publisher',
++            #    parameters=[robot_description_parameters],
++            #),
+             ComposableNode(
+                 package='tf2_ros',
+                 plugin='tf2_ros::StaticTransformBroadcasterNode',
+@@ -256,6 +267,17 @@ def launch_setup(context, *args, **kwargs):
+         output='screen',
+     )
+ 
++    robot_state_publisher_node = Node(
++        package='robot_state_publisher',
++        executable='robot_state_publisher',
++        output='screen',
++        parameters=[moveit_config.robot_description],
++        remappings=[
++            # ('/tf', 'tf'),
++            # ('/tf_static', 'tf_static'),
++        ]
++    )
++
+     joystick_node = Node(
+         package="xarm_moveit_servo",
+         executable="xarm_joystick_input_node",
+@@ -271,20 +293,27 @@ def launch_setup(context, *args, **kwargs):
+         output="screen",
+     )
+ 
+-    return [
+-        # RegisterEventHandler(
+-        #     event_handler=OnProcessExit(
+-        #         target_action=traj_controller_node,
+-        #         on_exit=container,
+-        #     )
+-        # ),
+-        rviz_node,
+-        joint_state_publisher_node,
+-        ros2_control_launch,
+-        container,
+-        joystick_node,
+-        traj_controller_node,
+-    ] + controller_nodes
++    if parse_bool(with_planning.perform(context)):
++        return [
++            container,
++            joystick_node
++        ]
++    else:
++        return [
++            robot_state_publisher_node,
++            # RegisterEventHandler(
++            #     event_handler=OnProcessExit(
++            #         target_action=traj_controller_node,
++            #         on_exit=container,
++            #     )
++            # ),
++            rviz_node,
++            joint_state_publisher_node,
++            ros2_control_launch,
++            container,
++            joystick_node,
++            traj_controller_node,
++        ] + controller_nodes
+ 
+ 
+ def generate_launch_description():
+diff --git a/xarm_moveit_servo/launch/lite6_moveit_servo_fake.launch.py b/xarm_moveit_servo/launch/lite6_moveit_servo_fake.launch.py
+index 1e08c2a..2d9c43f 100644
+--- a/xarm_moveit_servo/launch/lite6_moveit_servo_fake.launch.py
++++ b/xarm_moveit_servo/launch/lite6_moveit_servo_fake.launch.py
+@@ -22,6 +22,8 @@ def generate_launch_description():
+     add_gripper = LaunchConfiguration('add_gripper', default=False)
+     add_vacuum_gripper = LaunchConfiguration('add_vacuum_gripper', default=False)
+ 
++    with_planning = LaunchConfiguration('with_planning', default=False)
++
+     # robot moveit servo launch
+     # xarm_moveit_servo/launch/_robot_moveit_servo.launch.py
+     robot_moveit_servo_launch = IncludeLaunchDescription(
+@@ -36,6 +38,7 @@ def generate_launch_description():
+             'add_gripper': add_gripper,
+             'add_vacuum_gripper': add_vacuum_gripper,
+             'robot_type': 'lite',
++            'with_planning': with_planning,
+         }.items(),
+     )
+     
+diff --git a/xarm_moveit_servo/launch/lite6_moveit_servo_realmove.launch.py b/xarm_moveit_servo/launch/lite6_moveit_servo_realmove.launch.py
+index 8587281..80ee347 100644
+--- a/xarm_moveit_servo/launch/lite6_moveit_servo_realmove.launch.py
++++ b/xarm_moveit_servo/launch/lite6_moveit_servo_realmove.launch.py
+@@ -26,6 +26,8 @@ def generate_launch_description():
+     baud_checkset = LaunchConfiguration('baud_checkset', default=True)
+     default_gripper_baud = LaunchConfiguration('default_gripper_baud', default=2000000)
+ 
++    with_planning = LaunchConfiguration('with_planning', default=False)
++	
+     # robot moveit servo launch
+     # xarm_moveit_servo/launch/_robot_moveit_servo.launch.py
+     robot_moveit_servo_launch = IncludeLaunchDescription(
+@@ -45,6 +47,7 @@ def generate_launch_description():
+             'add_vacuum_gripper': add_vacuum_gripper,
+             'robot_type': 'lite',
+             'ros2_control_plugin': 'uf_robot_hardware/UFRobotSystemHardware',
++            'with_planning': with_planning,
+         }.items(),
+     )
+ 
+diff --git a/xarm_moveit_servo/src/xarm_joystick_input.cpp b/xarm_moveit_servo/src/xarm_joystick_input.cpp
+index 9964386..6643284 100644
+--- a/xarm_moveit_servo/src/xarm_joystick_input.cpp
++++ b/xarm_moveit_servo/src/xarm_joystick_input.cpp
+@@ -7,6 +7,8 @@
+ 
+ #include "xarm_moveit_servo/xarm_joystick_input.h"
+ 
++#define EN_PLANNING 1
++#define ROTATE_JOYPAD 1
+ 
+ namespace xarm_moveit_servo
+ {
+@@ -97,6 +99,8 @@ JoyToServoPub::JoyToServoPub(const rclcpp::NodeOptions& options)
+     if (cartesian_command_in_topic_.rfind("~/", 0) == 0) {
+         cartesian_command_in_topic_ = "/servo_server/" + cartesian_command_in_topic_.substr(2, cartesian_command_in_topic_.length());
+     }
++    cartesian_command_in_topic_ = "/joypad/delta_twist_cmds"; // to delta_twist_cmds_mux
++
+     if (joint_command_in_topic_.rfind("~/", 0) == 0) {
+         joint_command_in_topic_ = "/servo_server/" + joint_command_in_topic_.substr(2, joint_command_in_topic_.length());
+     }
+@@ -204,6 +208,7 @@ bool JoyToServoPub::_convert_xbox360_joy_to_cmd(
+         planning_frame_ = ee_frame_name_;
+     }
+     
++#if !EN_PLANNING
+     if (buttons[XBOX360_BTN_A] || buttons[XBOX360_BTN_B] 
+         || buttons[XBOX360_BTN_X] || buttons[XBOX360_BTN_Y] 
+         || axes[cross_key_lr] || axes[cross_key_fb])
+@@ -221,11 +226,21 @@ bool JoyToServoPub::_convert_xbox360_joy_to_cmd(
+         joint->velocities.push_back((buttons[XBOX360_BTN_Y] - buttons[XBOX360_BTN_A]) * 1);
+         return false;
+     }
++#else
++    (void)joint;
++    (void)cross_key_lr;
++    (void)cross_key_fb;
++#endif
+ 
+     // The bread and butter: map buttons to twist commands
+     twist->twist.linear.x = axes[left_stick_fb];
+     twist->twist.linear.y = axes[left_stick_lr];
+-    twist->twist.linear.z = -1 * (axes[left_trigger] - axes[right_trigger]);
++    twist->twist.linear.z = -0.5 * (axes[left_trigger] - axes[right_trigger]); // 0.5 bcs triggers are [-1, 1]
++#if ROTATE_JOYPAD
++    twist->twist.linear.x *= -1;
++    twist->twist.linear.y *= -1;
++    twist->twist.linear.z *= -1;
++#endif
+     twist->twist.angular.y = axes[right_stick_fb];
+     twist->twist.angular.x = axes[right_stick_lr];
+     twist->twist.angular.z = buttons[XBOX360_BTN_LB] - buttons[XBOX360_BTN_RB];
+diff --git a/xarm_planner/include/xarm_planner/xarm_planner.h b/xarm_planner/include/xarm_planner/xarm_planner.h
+index a0b77ee..1d7807d 100644
+--- a/xarm_planner/include/xarm_planner/xarm_planner.h
++++ b/xarm_planner/include/xarm_planner/xarm_planner.h
+@@ -35,6 +35,8 @@ namespace xarm_planner
+         ~XArmPlanner() {};
+ 
+         bool planJointTarget(const std::vector<double>& joint_target);
++        bool planPositionTarget(double x, double y, double z);
++        bool planRPYTarget(double roll, double pitch, double yaw);
+         bool planPoseTarget(const geometry_msgs::msg::Pose& pose_target);
+         bool planPoseTargets(const std::vector<geometry_msgs::msg::Pose>& pose_target_vector);
+         bool planCartesianPath(const std::vector<geometry_msgs::msg::Pose>& pose_target_vector);
+diff --git a/xarm_planner/src/xarm_planner.cpp b/xarm_planner/src/xarm_planner.cpp
+index d35f9fd..43de204 100644
+--- a/xarm_planner/src/xarm_planner.cpp
++++ b/xarm_planner/src/xarm_planner.cpp
+@@ -50,6 +50,29 @@ bool XArmPlanner::planJointTarget(const std::vector<double>& joint_target)
+     return success;
+ }
+ 
++bool XArmPlanner::planPositionTarget(double x, double y, double z)
++{
++    bool success = move_group_-> setPositionTarget(x, y, z);
++    if (!success)
++        RCLCPP_WARN(node_->get_logger(), " setPositionTarget: out of bounds");
++    success = (move_group_->plan(xarm_plan_) == moveit::core::MoveItErrorCode::SUCCESS);
++    if (!success)
++        RCLCPP_ERROR(node_->get_logger(), "planPositionTarget: plan failed");
++    is_trajectory_ = false;
++    return success;
++}
++bool XArmPlanner::planRPYTarget(double roll, double pitch, double yaw)
++{
++    bool success = move_group_->setRPYTarget(roll, pitch, yaw);
++    if (!success)
++        RCLCPP_WARN(node_->get_logger(), "setRPYTarget: out of bounds");
++    success = (move_group_->plan(xarm_plan_) == moveit::core::MoveItErrorCode::SUCCESS);
++    if (!success)
++        RCLCPP_ERROR(node_->get_logger(), "planRPYTarget: plan failed");
++    is_trajectory_ = false;
++    return success;
++}
++
+ bool XArmPlanner::planPoseTarget(const geometry_msgs::msg::Pose& pose_target)
+ {
+     bool success = move_group_->setPoseTarget(pose_target);
