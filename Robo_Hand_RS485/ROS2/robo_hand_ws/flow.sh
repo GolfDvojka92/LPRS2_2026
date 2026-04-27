@@ -24,6 +24,11 @@ source install/setup.sh
 #############################
 # Connect to robot
 
+# Run eventer.
+ros2 launch glue_events_routines lite6.launch.py
+
+#############################
+
 #T1
 ros2 launch xarm_moveit_config lite6_moveit_realmove.launch.py robot_ip:=192.168.1.163 add_gripper:=true
 
