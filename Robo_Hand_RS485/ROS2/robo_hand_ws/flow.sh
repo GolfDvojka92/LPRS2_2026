@@ -24,8 +24,8 @@ source install/setup.sh
 #############################
 # Connect to robot
 
-# Run eventer.
-ros2 launch glue_events_routines lite6.launch.py
+# Test hand.
+ros2 run glue_events_routines hand_test
 
 #############################
 

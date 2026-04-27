@@ -68,9 +68,6 @@ include_directories(
   ${ament_INCLUDE_DIRS}
 )
 
-add_library(eventer SHARED src/eventer.cpp)
-ament_target_dependencies(eventer ${THIS_PACKAGE_INCLUDE_DEPENDS})
-rclcpp_components_register_nodes(eventer "glue_events_routines::Eventer")
 
 
 include_directories(
@@ -79,15 +76,23 @@ include_directories(
 link_directories(
 	../../../install/xarm_planner/lib
 )
+add_executable(
+  hand_test
+  src/hand_test.cpp
+)
+ament_target_dependencies(hand_test
+  ${THIS_PACKAGE_INCLUDE_DEPENDS}
+)
+target_link_libraries(hand_test 
+  xarm_planner
+  ${ament_LIBRARIES}
+)
 
 
-add_library(delta_twist_cmds_mux SHARED src/delta_twist_cmds_mux.cpp)
-ament_target_dependencies(delta_twist_cmds_mux ${THIS_PACKAGE_INCLUDE_DEPENDS})
-rclcpp_components_register_nodes(delta_twist_cmds_mux "glue_events_routines::delta_twist_cmds_mux")
-
-
+a
 install(TARGETS
-  eventer
+
+  hand_test
   EXPORT export_${PROJECT_NAME}
   LIBRARY DESTINATION lib
   ARCHIVE DESTINATION lib
