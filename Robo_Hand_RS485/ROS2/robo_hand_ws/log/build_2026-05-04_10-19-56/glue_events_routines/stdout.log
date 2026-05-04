@@ -1,0 +1,5 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/hand_test.dir/src/hand_test.cpp.o[0m
+[100%] [32m[1mLinking CXX executable hand_test[0m
+[100%] Built target hand_test
+-- Install configuration: ""
+-- Execute custom install script

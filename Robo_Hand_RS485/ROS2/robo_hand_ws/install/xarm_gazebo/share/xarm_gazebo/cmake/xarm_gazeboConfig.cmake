@@ -1,0 +1,1 @@
+/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/build/xarm_gazebo/ament_cmake_core/xarm_gazeboConfig.cmake

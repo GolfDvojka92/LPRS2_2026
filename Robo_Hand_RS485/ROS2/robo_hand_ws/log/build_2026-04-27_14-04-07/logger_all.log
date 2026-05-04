@@ -1,0 +1,167 @@
+[0.252s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.252s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=12, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x70ab902a5c40>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x70ab903d58e0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x70ab903d58e0>>, mixin_verb=('build',))
+[0.345s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.345s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.345s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.345s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.345s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.346s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.346s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws'
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(patches) by extensions ['ignore', 'ignore_ament_install']
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(patches) by extension 'ignore'
+[0.395s] Level 1:colcon.colcon_core.package_identification:_identify(patches) by extension 'ignore_ament_install'
+[0.395s] Level 1:colcon.colcon_core.package_identification:_identify(patches) by extensions ['colcon_pkg']
+[0.395s] Level 1:colcon.colcon_core.package_identification:_identify(patches) by extension 'colcon_pkg'
+[0.395s] Level 1:colcon.colcon_core.package_identification:_identify(patches) by extensions ['colcon_meta']
+[0.395s] Level 1:colcon.colcon_core.package_identification:_identify(patches) by extension 'colcon_meta'
+[0.395s] Level 1:colcon.colcon_core.package_identification:_identify(patches) by extensions ['ros']
+[0.395s] Level 1:colcon.colcon_core.package_identification:_identify(patches) by extension 'ros'
+[0.395s] Level 1:colcon.colcon_core.package_identification:_identify(patches) by extensions ['cmake', 'python']
+[0.395s] Level 1:colcon.colcon_core.package_identification:_identify(patches) by extension 'cmake'
+[0.395s] Level 1:colcon.colcon_core.package_identification:_identify(patches) by extension 'python'
+[0.395s] Level 1:colcon.colcon_core.package_identification:_identify(patches) by extensions ['python_setup_py']
+[0.395s] Level 1:colcon.colcon_core.package_identification:_identify(patches) by extension 'python_setup_py'
+[0.396s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.396s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.396s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.396s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.396s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.396s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.396s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.396s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.396s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.396s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.396s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.396s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.396s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.396s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.397s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom) by extensions ['ignore', 'ignore_ament_install']
+[0.397s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom) by extension 'ignore'
+[0.397s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom) by extension 'ignore_ament_install'
+[0.397s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom) by extensions ['colcon_pkg']
+[0.397s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom) by extension 'colcon_pkg'
+[0.397s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom) by extensions ['colcon_meta']
+[0.397s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom) by extension 'colcon_meta'
+[0.397s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom) by extensions ['ros']
+[0.397s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom) by extension 'ros'
+[0.397s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom) by extensions ['cmake', 'python']
+[0.397s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom) by extension 'cmake'
+[0.397s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom) by extension 'python'
+[0.398s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom) by extensions ['python_setup_py']
+[0.398s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom) by extension 'python_setup_py'
+[0.398s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom/glue_events_routines) by extensions ['ignore', 'ignore_ament_install']
+[0.398s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom/glue_events_routines) by extension 'ignore'
+[0.398s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom/glue_events_routines) by extension 'ignore_ament_install'
+[0.398s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom/glue_events_routines) by extensions ['colcon_pkg']
+[0.398s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom/glue_events_routines) by extension 'colcon_pkg'
+[0.398s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom/glue_events_routines) by extensions ['colcon_meta']
+[0.398s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom/glue_events_routines) by extension 'colcon_meta'
+[0.398s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom/glue_events_routines) by extensions ['ros']
+[0.398s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom/glue_events_routines) by extension 'ros'
+[0.403s] DEBUG:colcon.colcon_core.package_identification:Package 'src/custom/glue_events_routines' with type 'ros.ament_cmake' and name 'glue_events_routines'
+[0.403s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.403s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.404s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.404s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.404s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.438s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.438s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.441s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/install/xarm_planner' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.441s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/install/xarm_moveit_servo' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.441s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/install/xarm_moveit_config' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.441s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/install/xarm_gazebo' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.441s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/install/xarm_controller' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.441s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/install/xarm_api' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.441s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/install/xarm_sdk' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.441s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/install/xarm_msgs' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.441s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/install/xarm_description' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.442s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/install/mbot_demo' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.442s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/install/uf_ros_lib' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.442s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/install/realsense_gazebo_plugin' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.442s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/install/xarm_planner' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.442s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/install/xarm_moveit_servo' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.442s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/install/xarm_moveit_config' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.442s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/install/xarm_gazebo' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.442s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/install/xarm_controller' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.442s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/install/xarm_api' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.443s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/install/xarm_sdk' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.443s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/install/xarm_msgs' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.443s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/install/xarm_description' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.443s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/install/mbot_demo' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.443s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/install/realsense_gazebo_plugin' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.447s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 0 installed packages in /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/install
+[0.451s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 377 installed packages in /opt/ros/jazzy
+[0.453s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.602s] Level 5:colcon.colcon_core.verb:set package 'glue_events_routines' build argument 'cmake_args' from command line to 'None'
+[0.602s] Level 5:colcon.colcon_core.verb:set package 'glue_events_routines' build argument 'cmake_target' from command line to 'None'
+[0.602s] Level 5:colcon.colcon_core.verb:set package 'glue_events_routines' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.602s] Level 5:colcon.colcon_core.verb:set package 'glue_events_routines' build argument 'cmake_clean_cache' from command line to 'False'
+[0.602s] Level 5:colcon.colcon_core.verb:set package 'glue_events_routines' build argument 'cmake_clean_first' from command line to 'False'
+[0.602s] Level 5:colcon.colcon_core.verb:set package 'glue_events_routines' build argument 'cmake_force_configure' from command line to 'False'
+[0.603s] Level 5:colcon.colcon_core.verb:set package 'glue_events_routines' build argument 'ament_cmake_args' from command line to 'None'
+[0.603s] Level 5:colcon.colcon_core.verb:set package 'glue_events_routines' build argument 'catkin_cmake_args' from command line to 'None'
+[0.603s] Level 5:colcon.colcon_core.verb:set package 'glue_events_routines' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.603s] DEBUG:colcon.colcon_core.verb:Building package 'glue_events_routines' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/build/glue_events_routines', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/install/glue_events_routines', 'merge_install': False, 'path': '/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/custom/glue_events_routines', 'symlink_install': False, 'test_result_base': None}
+[0.603s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.604s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.605s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/custom/glue_events_routines' with build type 'ament_cmake'
+[0.605s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/custom/glue_events_routines'
+[0.612s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.612s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.612s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.626s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/build/glue_events_routines': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/install/uf_ros_lib:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/custom/glue_events_routines -DCMAKE_INSTALL_PREFIX=/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/install/glue_events_routines
+[0.674s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/build/glue_events_routines' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/install/uf_ros_lib:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/custom/glue_events_routines -DCMAKE_INSTALL_PREFIX=/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/install/glue_events_routines
+[0.693s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(glue_events_routines)
+[0.701s] Level 1:colcon.colcon_core.environment:checking '/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/install/glue_events_routines' for CMake module files
+[0.702s] Level 1:colcon.colcon_core.environment:checking '/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/install/glue_events_routines' for CMake config files
+[0.702s] Level 1:colcon.colcon_core.environment:checking '/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/install/glue_events_routines/bin'
+[0.702s] Level 1:colcon.colcon_core.environment:checking '/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/install/glue_events_routines/lib/pkgconfig/glue_events_routines.pc'
+[0.702s] Level 1:colcon.colcon_core.environment:checking '/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/install/glue_events_routines/lib/python3.12/site-packages'
+[0.703s] Level 1:colcon.colcon_core.environment:checking '/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/install/glue_events_routines/bin'
+[0.703s] INFO:colcon.colcon_core.shell:Creating package script '/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/install/glue_events_routines/share/glue_events_routines/package.ps1'
+[0.705s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/install/glue_events_routines/share/glue_events_routines/package.dsv'
+[0.706s] INFO:colcon.colcon_core.shell:Creating package script '/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/install/glue_events_routines/share/glue_events_routines/package.sh'
+[0.707s] INFO:colcon.colcon_core.shell:Creating package script '/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/install/glue_events_routines/share/glue_events_routines/package.bash'
+[0.708s] INFO:colcon.colcon_core.shell:Creating package script '/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/install/glue_events_routines/share/glue_events_routines/package.zsh'
+[0.709s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/install/glue_events_routines/share/colcon-core/packages/glue_events_routines)
+[0.720s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[0.720s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[0.720s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '1'
+[0.721s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[0.734s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[0.734s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[0.734s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[0.793s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[0.794s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/install/local_setup.ps1'
+[0.795s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/install/_local_setup_util_ps1.py'
+[0.797s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/install/setup.ps1'
+[0.799s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/install/local_setup.sh'
+[0.800s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/install/_local_setup_util_sh.py'
+[0.801s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/install/setup.sh'
+[0.803s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/install/local_setup.bash'
+[0.804s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/install/setup.bash'
+[0.805s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/install/local_setup.zsh'
+[0.806s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/install/setup.zsh'

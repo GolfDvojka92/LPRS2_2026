@@ -1,0 +1,1 @@
+/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/build/xarm_controller/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake

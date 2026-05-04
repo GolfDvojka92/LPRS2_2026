@@ -1,0 +1,1 @@
+/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/xarm_ros2/xarm_moveit_servo/launch/uf850_moveit_servo_fake.launch.py

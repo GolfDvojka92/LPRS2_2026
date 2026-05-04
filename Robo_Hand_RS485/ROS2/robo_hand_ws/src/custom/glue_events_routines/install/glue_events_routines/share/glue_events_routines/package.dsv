@@ -1,0 +1,8 @@
+source;share/glue_events_routines/hook/cmake_prefix_path.ps1
+source;share/glue_events_routines/hook/cmake_prefix_path.dsv
+source;share/glue_events_routines/hook/cmake_prefix_path.sh
+source;share/glue_events_routines/local_setup.bash
+source;share/glue_events_routines/local_setup.dsv
+source;share/glue_events_routines/local_setup.ps1
+source;share/glue_events_routines/local_setup.sh
+source;share/glue_events_routines/local_setup.zsh

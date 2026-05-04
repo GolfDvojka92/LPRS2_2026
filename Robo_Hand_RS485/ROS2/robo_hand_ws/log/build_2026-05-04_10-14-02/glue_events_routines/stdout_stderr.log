@@ -1,0 +1,12 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/hand_test.dir/src/hand_test.cpp.o[0m
+[01m[K/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/custom/glue_events_routines/src/hand_test.cpp:[m[K In function ‘[01m[Kvoid[01;32m[K exec_hand[m[K(const cmds_t&)[m[K’:
+[01m[K/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/custom/glue_events_routines/src/hand_test.cpp:70:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ktmr_beg[m[K’ was not declared in this scope
+   70 |         [01;31m[Ktmr_beg[m[K("exec_hand " + cmds.at("name"));
+      |         [01;31m[K^~~~~~~[m[K
+[01m[K/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/custom/glue_events_routines/src/hand_test.cpp:[m[K In function ‘[01m[Kint[01;32m[K main[m[K(int, char**)[m[K’:
+[01m[K/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/custom/glue_events_routines/src/hand_test.cpp:173:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kcmds[m[K’ declared as reference but not initialized
+  173 |         cmds_t& [01;31m[Kcmds[m[K;
+      |                 [01;31m[K^~~~[m[K
+gmake[2]: *** [CMakeFiles/hand_test.dir/build.make:76: CMakeFiles/hand_test.dir/src/hand_test.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/hand_test.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

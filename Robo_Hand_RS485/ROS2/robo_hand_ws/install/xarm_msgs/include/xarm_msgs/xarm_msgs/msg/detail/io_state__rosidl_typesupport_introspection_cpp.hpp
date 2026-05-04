@@ -1,0 +1,1 @@
+/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/build/xarm_msgs/rosidl_typesupport_introspection_cpp/xarm_msgs/msg/detail/io_state__rosidl_typesupport_introspection_cpp.hpp

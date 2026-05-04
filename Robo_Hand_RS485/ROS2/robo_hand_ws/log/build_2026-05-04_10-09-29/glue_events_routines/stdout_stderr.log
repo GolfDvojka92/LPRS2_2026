@@ -1,0 +1,164 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/hand_test.dir/src/hand_test.cpp.o[0m
+[01m[K/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/custom/glue_events_routines/src/hand_test.cpp:36:1:[m[K [01;31m[Kerror: [m[K‘[01m[Kshared_ptr[m[K’ does not name a type
+   36 | [01;31m[Kshared_ptr[m[K<rclcpp::Node> node;
+      | [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/custom/glue_events_routines/src/hand_test.cpp:65:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kmap[m[K’ does not name a type
+   65 | typedef [01;31m[Kmap[m[K<string, string> cmds_t;
+      |         [01;31m[K^~~[m[K
+[01m[K/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/custom/glue_events_routines/src/hand_test.cpp:67:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kcmds_t[m[K’ does not name a type
+   67 | void exec_hand(const [01;31m[Kcmds_t[m[K& cmds) {
+      |                      [01;31m[K^~~~~~[m[K
+[01m[K/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/custom/glue_events_routines/src/hand_test.cpp:[m[K In function ‘[01m[Kvoid[01;32m[K exec_hand[m[K(const int&)[m[K’:
+[01m[K/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/custom/glue_events_routines/src/hand_test.cpp:68:37:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kat[m[K’ in ‘[01m[Kcmds[m[K’, which is of non-class type ‘[01m[Kconst int[m[K’
+   68 |         tmr_beg("exec_hand " + cmds.[01;31m[Kat[m[K("name"));
+      |                                     [01;31m[K^~[m[K
+[01m[K/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/custom/glue_events_routines/src/hand_test.cpp:68:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ktmr_beg[m[K’ was not declared in this scope
+   68 |         [01;31m[Ktmr_beg[m[K("exec_hand " + cmds.at("name"));
+      |         [01;31m[K^~~~~~~[m[K
+[01m[K/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/custom/glue_events_routines/src/hand_test.cpp:70:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kshared_ptr[m[K’ was not declared in this scope
+   70 |         [01;31m[Kshared_ptr[m[K<xarm_msgs::srv::Call::Request> gripper_req = make_shared<xarm_msgs::srv::Call::Request>();
+      |         [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/custom/glue_events_routines/src/hand_test.cpp:70:9:[m[K [01;36m[Knote: [m[Ksuggested alternatives:
+In file included from [01m[K/usr/include/c++/13/bits/shared_ptr.h:53[m[K,
+                 from [01m[K/usr/include/c++/13/memory:80[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:169[m[K,
+                 from [01m[K/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/custom/glue_events_routines/src/hand_test.cpp:6[m[K:
+[01m[K/usr/include/c++/13/bits/shared_ptr_base.h:395:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::shared_ptr[m[K’
+  395 |     class [01;36m[Kshared_ptr[m[K;
+      |           [01;36m[K^~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/boost/throw_exception.hpp:21[m[K,
+                 from [01m[K/usr/include/boost/random/detail/seed_impl.hpp:18[m[K,
+                 from [01m[K/usr/include/boost/random/mersenne_twister.hpp:30[m[K,
+                 from [01m[K/opt/ros/jazzy/include/random_numbers/random_numbers.h:40[m[K,
+                 from [01m[K/opt/ros/jazzy/include/moveit_core/moveit/robot_model/joint_model.hpp:45[m[K,
+                 from [01m[K/opt/ros/jazzy/include/moveit_core/moveit/robot_model/joint_model_group.hpp:40[m[K,
+                 from [01m[K/opt/ros/jazzy/include/moveit_core/moveit/robot_model/robot_model.hpp:45[m[K,
+                 from [01m[K/opt/ros/jazzy/include/moveit_core/moveit/robot_state/robot_state.hpp:40[m[K,
+                 from [01m[K/opt/ros/jazzy/include/moveit_ros_planning_interface/moveit/move_group_interface/move_group_interface.hpp:41[m[K,
+                 from [01m[K/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/custom/glue_events_routines/../../../install/xarm_planner/include/xarm_planner/xarm_planner.h:14[m[K,
+                 from [01m[K/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/custom/glue_events_routines/src/hand_test.cpp:20[m[K:
+[01m[K/usr/include/boost/exception/exception.hpp:17:44:[m[K [01;36m[Knote: [m[K  ‘[01m[Kboost::shared_ptr[m[K’
+   17 | namespace boost { template <class T> class [01;36m[Kshared_ptr[m[K; }
+      |                                            [01;36m[K^~~~~~~~~~[m[K
+[01m[K/usr/include/boost/exception/exception.hpp:17:44:[m[K [01;36m[Knote: [m[K  ‘[01m[Kboost::shared_ptr[m[K’
+[01m[K/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/custom/glue_events_routines/src/hand_test.cpp:70:49:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+   70 |         shared_ptr<xarm_msgs::srv::Call::Request[01;31m[K>[m[K gripper_req = make_shared<xarm_msgs::srv::Call::Request>();
+      |                                                 [01;31m[K^[m[K
+[01m[K/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/custom/glue_events_routines/src/hand_test.cpp:70:51:[m[K [01;31m[Kerror: [m[K‘[01m[Kgripper_req[m[K’ was not declared in this scope
+   70 |         shared_ptr<xarm_msgs::srv::Call::Request> [01;31m[Kgripper_req[m[K = make_shared<xarm_msgs::srv::Call::Request>();
+      |                                                   [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/custom/glue_events_routines/src/hand_test.cpp:70:65:[m[K [01;31m[Kerror: [m[K‘[01m[Kmake_shared[m[K’ was not declared in this scope; did you mean ‘[01m[Kstd::make_shared[m[K’?
+   70 |     shared_ptr<xarm_msgs::srv::Call::Request> gripper_req = [01;31m[Kmake_shared[m[K<xarm_msgs::srv::Call::Request>();
+      |                                                             [01;31m[K^~~~~~~~~~~[m[K
+      |                                                             [32m[Kstd::make_shared[m[K
+[01m[K/usr/include/c++/13/bits/shared_ptr.h:1005:5:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::make_shared[m[K’ declared here
+ 1005 |     [01;36m[Kmake_shared[m[K(_Args&&... __args)
+      |     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/custom/glue_events_routines/src/hand_test.cpp:70:106:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+   70 | l::Request> gripper_req = make_shared<xarm_msgs::srv::Call::Request[01;31m[K>[m[K();
+      |                                                                    [01;31m[K^[m[K
+
+[01m[K/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/custom/glue_events_routines/src/hand_test.cpp:70:108:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K)[m[K’ token
+   70 | l::Request> gripper_req = make_shared<xarm_msgs::srv::Call::Request>([01;31m[K)[m[K;
+      |                                                                      [01;31m[K^[m[K
+
+[01m[K/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/custom/glue_events_routines/src/hand_test.cpp:[m[K In lambda function:
+[01m[K/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/custom/glue_events_routines/src/hand_test.cpp:74:83:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+   74 |  auto thumb_req = make_shared<xarm_msgs::srv::SetDigitalIO::Request[01;31m[K>[m[K();
+      |                                                                    [01;31m[K^[m[K
+
+[01m[K/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/custom/glue_events_routines/src/hand_test.cpp:74:85:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K)[m[K’ token
+   74 |  auto thumb_req = make_shared<xarm_msgs::srv::SetDigitalIO::Request>([01;31m[K)[m[K;
+      |                                                                      [01;31m[K^[m[K
+
+[01m[K/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/custom/glue_events_routines/src/hand_test.cpp:[m[K In function ‘[01m[Kvoid[01;32m[K exec_hand[m[K(const int&)[m[K’:
+[01m[K/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/custom/glue_events_routines/src/hand_test.cpp:80:17:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kat[m[K’ in ‘[01m[Kcmds[m[K’, which is of non-class type ‘[01m[Kconst int[m[K’
+   80 |         if(cmds.[01;31m[Kat[m[K("gripper") != ""){
+      |                 [01;31m[K^~[m[K
+[01m[K/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/custom/glue_events_routines/src/hand_test.cpp:81:25:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kat[m[K’ in ‘[01m[Kcmds[m[K’, which is of non-class type ‘[01m[Kconst int[m[K’
+   81 |                 if(cmds.[01;31m[Kat[m[K("gripper") == "open"){
+      |                         [01;31m[K^~[m[K
+[01m[K/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/custom/glue_events_routines/src/hand_test.cpp:87:31:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kat[m[K’ in ‘[01m[Kcmds[m[K’, which is of non-class type ‘[01m[Kconst int[m[K’
+   87 |                 }else if(cmds.[01;31m[Kat[m[K("gripper") == "close"){
+      |                               [01;31m[K^~[m[K
+[01m[K/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/custom/glue_events_routines/src/hand_test.cpp:93:31:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kat[m[K’ in ‘[01m[Kcmds[m[K’, which is of non-class type ‘[01m[Kconst int[m[K’
+   93 |                 }else if(cmds.[01;31m[Kat[m[K("gripper") == "stop"){
+      |                               [01;31m[K^~[m[K
+[01m[K/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/custom/glue_events_routines/src/hand_test.cpp:102:17:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kat[m[K’ in ‘[01m[Kcmds[m[K’, which is of non-class type ‘[01m[Kconst int[m[K’
+  102 |         if(cmds.[01;31m[Kat[m[K("thumb") != ""){
+      |                 [01;31m[K^~[m[K
+[01m[K/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/custom/glue_events_routines/src/hand_test.cpp:103:25:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kat[m[K’ in ‘[01m[Kcmds[m[K’, which is of non-class type ‘[01m[Kconst int[m[K’
+  103 |                 if(cmds.[01;31m[Kat[m[K("thumb") == "up"){
+      |                         [01;31m[K^~[m[K
+[01m[K/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/custom/glue_events_routines/src/hand_test.cpp:110:31:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kat[m[K’ in ‘[01m[Kcmds[m[K’, which is of non-class type ‘[01m[Kconst int[m[K’
+  110 |                 }else if(cmds.[01;31m[Kat[m[K("thumb") == "down"){
+      |                               [01;31m[K^~[m[K
+[01m[K/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/custom/glue_events_routines/src/hand_test.cpp:117:31:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kat[m[K’ in ‘[01m[Kcmds[m[K’, which is of non-class type ‘[01m[Kconst int[m[K’
+  117 |                 }else if(cmds.[01;31m[Kat[m[K("thumb") == "stop"){
+      |                               [01;31m[K^~[m[K
+[01m[K/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/custom/glue_events_routines/src/hand_test.cpp:[m[K In function ‘[01m[Kint[01;32m[K main[m[K(int, char**)[m[K’:
+[01m[K/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/custom/glue_events_routines/src/hand_test.cpp:145:9:[m[K [01;31m[Kerror: [m[K‘[01m[Knode[m[K’ was not declared in this scope
+  145 |         [01;31m[Knode[m[K = rclcpp::Node::make_shared("routine_server", node_options);
+      |         [01;31m[K^~~~[m[K
+In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:171[m[K:
+[01m[K/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/custom/glue_events_routines/src/hand_test.cpp:146:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  146 |         [01;31m[KRCLCPP_INFO[m[K(node->get_logger(), "routine_server start");
+      |         [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/custom/glue_events_routines/src/hand_test.cpp:151:72:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+  151 | n_gripper__client = node->create_client<xarm_msgs::srv::Call[01;31m[K>[m[K("/ufactory/open_lite6_gripper");
+      |                                                             [01;31m[K^[m[K
+
+[01m[K/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/custom/glue_events_routines/src/hand_test.cpp:152:48:[m[K [01;31m[Kerror: [m[K‘[01m[Kchrono[m[K’ has not been declared
+  152 |         open_gripper__client->wait_for_service([01;31m[Kchrono[m[K::seconds(3));
+      |                                                [01;31m[K^~~~~~[m[K
+[01m[K/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/custom/glue_events_routines/src/hand_test.cpp:153:73:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+  153 | e_gripper__client = node->create_client<xarm_msgs::srv::Call[01;31m[K>[m[K("/ufactory/close_lite6_gripper");
+      |                                                             [01;31m[K^[m[K
+
+[01m[K/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/custom/glue_events_routines/src/hand_test.cpp:154:49:[m[K [01;31m[Kerror: [m[K‘[01m[Kchrono[m[K’ has not been declared
+  154 |         close_gripper__client->wait_for_service([01;31m[Kchrono[m[K::seconds(3));
+      |                                                 [01;31m[K^~~~~~[m[K
+[01m[K/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/custom/glue_events_routines/src/hand_test.cpp:155:72:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+  155 | p_gripper__client = node->create_client<xarm_msgs::srv::Call[01;31m[K>[m[K("/ufactory/stop_lite6_gripper");
+      |                                                             [01;31m[K^[m[K
+
+[01m[K/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/custom/glue_events_routines/src/hand_test.cpp:156:48:[m[K [01;31m[Kerror: [m[K‘[01m[Kchrono[m[K’ has not been declared
+  156 |         stop_gripper__client->wait_for_service([01;31m[Kchrono[m[K::seconds(3));
+      |                                                [01;31m[K^~~~~~[m[K
+[01m[K/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/custom/glue_events_routines/src/hand_test.cpp:158:78:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+  158 | s__client = node->create_client<xarm_msgs::srv::SetDigitalIO[01;31m[K>[m[K("/ufactory/set_cgpio_digital");
+      |                                                             [01;31m[K^[m[K
+
+[01m[K/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/custom/glue_events_routines/src/hand_test.cpp:159:46:[m[K [01;31m[Kerror: [m[K‘[01m[Kchrono[m[K’ has not been declared
+  159 |         thumb_pins__client->wait_for_service([01;31m[Kchrono[m[K::seconds(3));
+      |                                              [01;31m[K^~~~~~[m[K
+[01m[K/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/custom/glue_events_routines/src/hand_test.cpp:162:73:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+  162 | o_pause__client = node->create_client<std_srvs::srv::SetBool[01;31m[K>[m[K("/servo_server/pause_servo");
+      |                                                             [01;31m[K^[m[K
+
+[01m[K/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/custom/glue_events_routines/src/hand_test.cpp:163:47:[m[K [01;31m[Kerror: [m[K‘[01m[Kchrono[m[K’ has not been declared
+  163 |         servo_pause__client->wait_for_service([01;31m[Kchrono[m[K::seconds(1));
+      |                                               [01;31m[K^~~~~~[m[K
+[01m[K/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/custom/glue_events_routines/src/hand_test.cpp:164:86:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+  164 | ent = node->create_client<moveit_msgs::srv::ServoCommandType[01;31m[K>[m[K("/servo_server/switch_command_type");
+      |                                                             [01;31m[K^[m[K
+
+[01m[K/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/custom/glue_events_routines/src/hand_test.cpp:165:48:[m[K [01;31m[Kerror: [m[K‘[01m[Kchrono[m[K’ has not been declared
+  165 |         servo_sw_cmd__client->wait_for_service([01;31m[Kchrono[m[K::seconds(1));
+      |                                                [01;31m[K^~~~~~[m[K
+[01m[K/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/custom/glue_events_routines/src/hand_test.cpp:171:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kcmds_t[m[K’ was not declared in this scope
+  171 |         [01;31m[Kcmds_t[m[K& cmds;
+      |         [01;31m[K^~~~~~[m[K
+[01m[K/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/custom/glue_events_routines/src/hand_test.cpp:171:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kcmds[m[K’ was not declared in this scope
+  171 |         cmds_t& [01;31m[Kcmds[m[K;
+      |                 [01;31m[K^~~~[m[K
+[01m[K/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/custom/glue_events_routines/src/hand_test.cpp:175:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  175 |         [01;31m[KRCLCPP_INFO_STREAM[m[K(
+      |         [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/custom/glue_events_routines/src/hand_test.cpp:183:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  183 |         [01;31m[KRCLCPP_INFO_STREAM[m[K(
+      |         [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/hand_test.dir/build.make:76: CMakeFiles/hand_test.dir/src/hand_test.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/hand_test.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

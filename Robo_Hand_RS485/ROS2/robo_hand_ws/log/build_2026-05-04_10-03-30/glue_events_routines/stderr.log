@@ -1,0 +1,7 @@
+[01m[K/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/custom/glue_events_routines/src/hand_test.cpp:4:10:[m[K [01;31m[Kfatal error: [m[K../common.hpp: No such file or directory
+    4 | #include [01;31m[K"../common.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/hand_test.dir/build.make:76: CMakeFiles/hand_test.dir/src/hand_test.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/hand_test.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

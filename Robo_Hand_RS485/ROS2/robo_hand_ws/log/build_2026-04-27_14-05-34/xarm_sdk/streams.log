@@ -1,0 +1,113 @@
+[0.038s] Invoking command in '/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/build/xarm_sdk': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/install/uf_ros_lib:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/xarm_ros2/xarm_sdk -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/install/xarm_sdk
+[0.449s] -- The C compiler identification is GNU 13.3.0
+[0.449s] -- The CXX compiler identification is GNU 13.3.0
+[0.449s] -- Detecting C compiler ABI info
+[0.556s] -- Detecting C compiler ABI info - done
+[0.570s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.571s] -- Detecting C compile features
+[0.572s] -- Detecting C compile features - done
+[0.589s] -- Detecting CXX compiler ABI info
+[0.771s] -- Detecting CXX compiler ABI info - done
+[0.787s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.788s] -- Detecting CXX compile features
+[0.788s] -- Detecting CXX compile features - done
+[0.805s] -- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.113s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.252s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.372s] -- Found ament_lint_auto: 0.17.4 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[1.606s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.639s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.640s] -- Configured cppcheck include dirs: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/xarm_ros2/xarm_sdk/cxx/include
+[1.640s] -- Configured cppcheck exclude dirs and/or files: 
+[1.672s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.672s] -- Configured cpplint exclude dirs and/or files: 
+[1.686s] -- Added test 'lint_cmake' to check CMake code style
+[1.723s] -- Added test 'uncrustify' to check C / C++ code style
+[1.723s] -- Configured uncrustify additional arguments: 
+[1.729s] -- Added test 'xmllint' to check XML markup files
+[1.736s] -- Configuring done (1.7s)
+[1.753s] -- Generating done (0.0s)
+[1.756s] -- Build files have been written to: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/build/xarm_sdk
+[1.765s] Invoked command in '/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/build/xarm_sdk' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/install/uf_ros_lib:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/xarm_ros2/xarm_sdk -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/install/xarm_sdk
+[1.767s] Invoking command in '/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/build/xarm_sdk': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/install/uf_ros_lib:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/build/xarm_sdk -- -j12 -l12
+[1.873s] [  3%] [32mBuilding CXX object CMakeFiles/xarm_cxx_sdk.dir/cxx/src/serial/impl/list_ports/list_ports_linux.cc.o[0m
+[1.873s] [  6%] [32mBuilding CXX object CMakeFiles/xarm_cxx_sdk.dir/cxx/src/serial/impl/list_ports/list_ports_win.cc.o[0m
+[1.874s] [  9%] [32mBuilding CXX object CMakeFiles/xarm_cxx_sdk.dir/cxx/src/serial/impl/list_ports/list_ports_osx.cc.o[0m
+[1.874s] [ 12%] [32mBuilding CXX object CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/core/common/crc16.cc.o[0m
+[1.874s] [ 15%] [32mBuilding CXX object CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/core/common/queue_memcpy.cc.o[0m
+[1.874s] [ 18%] [32mBuilding CXX object CMakeFiles/xarm_cxx_sdk.dir/cxx/src/serial/impl/unix.cc.o[0m
+[1.884s] [ 21%] [32mBuilding CXX object CMakeFiles/xarm_cxx_sdk.dir/cxx/src/serial/impl/win.cc.o[0m
+[1.884s] [ 25%] [32mBuilding CXX object CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/core/connect.cc.o[0m
+[1.898s] [ 28%] [32mBuilding CXX object CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/core/instruction/uxbus_cmd_ser.cc.o[0m
+[1.903s] [ 31%] [32mBuilding CXX object CMakeFiles/xarm_cxx_sdk.dir/cxx/src/serial/serial.cc.o[0m
+[1.909s] [ 34%] [32mBuilding CXX object CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/core/debug/debug_print.cc.o[0m
+[1.911s] [ 37%] [32mBuilding CXX object CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/core/instruction/uxbus_cmd.cc.o[0m
+[1.935s] [ 40%] [32mBuilding CXX object CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/core/instruction/uxbus_cmd_tcp.cc.o[0m
+[1.945s] [ 43%] [32mBuilding CXX object CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/core/port/ser.cc.o[0m
+[1.949s] [ 46%] [32mBuilding CXX object CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/core/os/network.cc.o[0m
+[2.010s] [ 50%] [32mBuilding CXX object CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/core/port/socket.cc.o[0m
+[2.081s] [ 53%] [32mBuilding CXX object CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/core/report_data.cc.o[0m
+[2.494s] [ 56%] [32mBuilding CXX object CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/wrapper/xarm_api.cc.o[0m
+[2.809s] [ 59%] [32mBuilding CXX object CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/wrapper/xarm_bio.cc.o[0m
+[2.937s] [ 62%] [32mBuilding CXX object CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/wrapper/xarm_events.cc.o[0m
+[3.065s] [ 65%] [32mBuilding CXX object CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/wrapper/xarm_ft_sensor.cc.o[0m
+[3.078s] [ 68%] [32mBuilding CXX object CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/wrapper/xarm_gpio.cc.o[0m
+[3.110s] [ 71%] [32mBuilding CXX object CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/wrapper/xarm_gripper.cc.o[0m
+[3.148s] [ 75%] [32mBuilding CXX object CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/wrapper/xarm_linear_motor.cc.o[0m
+[3.191s] [ 78%] [32mBuilding CXX object CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/wrapper/xarm_modbus_tcp.cc.o[0m
+[3.212s] [ 81%] [32mBuilding CXX object CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/wrapper/xarm_motion.cc.o[0m
+[3.246s] [ 84%] [32mBuilding CXX object CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/wrapper/xarm_params.cc.o[0m
+[3.460s] [ 87%] [32mBuilding CXX object CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/wrapper/xarm_record.cc.o[0m
+[4.290s] [ 90%] [32mBuilding CXX object CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/wrapper/xarm_report.cc.o[0m
+[5.354s] [ 93%] [32mBuilding CXX object CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/wrapper/xarm_robotiq.cc.o[0m
+[5.426s] [ 96%] [32mBuilding CXX object CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/wrapper/xarm_servo.cc.o[0m
+[8.858s] [100%] [32m[1mLinking CXX shared library libxarm_cxx_sdk.so[0m
+[9.064s] [100%] Built target xarm_cxx_sdk
+[9.082s] Invoked command in '/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/build/xarm_sdk' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/install/uf_ros_lib:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/build/xarm_sdk -- -j12 -l12
+[9.083s] Invoking command in '/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/build/xarm_sdk': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/install/uf_ros_lib:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/build/xarm_sdk
+[9.094s] -- Install configuration: ""
+[9.094s] -- Execute custom install script
+[9.095s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/install/xarm_sdk/share/xarm_sdk/environment/library_path.sh
+[9.107s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/install/xarm_sdk/share/xarm_sdk/environment/library_path.dsv
+[9.121s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/install/xarm_sdk/cxx/include/serial/impl/unix.h
+[9.133s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/install/xarm_sdk/cxx/include/serial/impl/win.h
+[9.145s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/install/xarm_sdk/cxx/include/serial/serial.h
+[9.157s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/install/xarm_sdk/cxx/include/serial/v8stdint.h
+[9.170s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/install/xarm_sdk/cxx/include/xarm/core/common/crc16.h
+[9.181s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/install/xarm_sdk/cxx/include/xarm/core/common/data_type.h
+[9.192s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/install/xarm_sdk/cxx/include/xarm/core/common/queue_memcpy.h
+[9.205s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/install/xarm_sdk/cxx/include/xarm/core/connect.h
+[9.216s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/install/xarm_sdk/cxx/include/xarm/core/debug/debug_print.h
+[9.230s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/install/xarm_sdk/cxx/include/xarm/core/instruction/servo3_config.h
+[9.242s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/install/xarm_sdk/cxx/include/xarm/core/instruction/uxbus_cmd.h
+[9.253s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/install/xarm_sdk/cxx/include/xarm/core/instruction/uxbus_cmd_config.h
+[9.265s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/install/xarm_sdk/cxx/include/xarm/core/instruction/uxbus_cmd_ser.h
+[9.276s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/install/xarm_sdk/cxx/include/xarm/core/instruction/uxbus_cmd_tcp.h
+[9.288s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/install/xarm_sdk/cxx/include/xarm/core/os/bak/thread.h
+[9.300s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/install/xarm_sdk/cxx/include/xarm/core/os/network.h
+[9.311s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/install/xarm_sdk/cxx/include/xarm/core/port/ser.h
+[9.324s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/install/xarm_sdk/cxx/include/xarm/core/port/socket.h
+[9.336s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/install/xarm_sdk/cxx/include/xarm/core/report_data.h
+[9.346s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/install/xarm_sdk/cxx/include/xarm/core/xarm_config.h
+[9.357s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/install/xarm_sdk/cxx/include/xarm/wrapper/common/timer.h
+[9.368s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/install/xarm_sdk/cxx/include/xarm/wrapper/common/utils.h
+[9.379s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/install/xarm_sdk/cxx/include/xarm/wrapper/xarm_api.h
+[9.391s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/install/xarm_sdk/lib/libxarm_cxx_sdk.so
+[9.402s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/install/xarm_sdk/share/ament_index/resource_index/package_run_dependencies/xarm_sdk
+[9.413s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/install/xarm_sdk/share/ament_index/resource_index/parent_prefix_path/xarm_sdk
+[9.426s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/install/xarm_sdk/share/xarm_sdk/environment/ament_prefix_path.sh
+[9.437s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/install/xarm_sdk/share/xarm_sdk/environment/ament_prefix_path.dsv
+[9.448s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/install/xarm_sdk/share/xarm_sdk/environment/path.sh
+[9.459s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/install/xarm_sdk/share/xarm_sdk/environment/path.dsv
+[9.470s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/install/xarm_sdk/share/xarm_sdk/local_setup.bash
+[9.480s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/install/xarm_sdk/share/xarm_sdk/local_setup.sh
+[9.491s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/install/xarm_sdk/share/xarm_sdk/local_setup.zsh
+[9.502s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/install/xarm_sdk/share/xarm_sdk/local_setup.dsv
+[9.512s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/install/xarm_sdk/share/xarm_sdk/package.dsv
+[9.526s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/install/xarm_sdk/share/ament_index/resource_index/packages/xarm_sdk
+[9.537s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/install/xarm_sdk/share/xarm_sdk/cmake/ament_cmake_export_libraries-extras.cmake
+[9.546s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/install/xarm_sdk/share/xarm_sdk/cmake/ament_cmake_export_include_directories-extras.cmake
+[9.557s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/install/xarm_sdk/share/xarm_sdk/cmake/xarm_sdkConfig.cmake
+[9.567s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/install/xarm_sdk/share/xarm_sdk/cmake/xarm_sdkConfig-version.cmake
+[9.578s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/install/xarm_sdk/share/xarm_sdk/package.xml
+[9.591s] Invoked command in '/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/build/xarm_sdk' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/install/uf_ros_lib:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/build/xarm_sdk

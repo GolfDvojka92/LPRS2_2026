@@ -1,0 +1,15 @@
+[0.953s] Invoking command in '/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/build/uf_ros_lib': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/build/uf_ros_lib/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/install/uf_ros_lib/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/build/uf_ros_lib/build --no-deps symlink_data
+[1.280s] running develop
+[1.466s] running egg_info
+[1.486s] writing uf_ros_lib.egg-info/PKG-INFO
+[1.487s] writing dependency_links to uf_ros_lib.egg-info/dependency_links.txt
+[1.487s] writing requirements to uf_ros_lib.egg-info/requires.txt
+[1.487s] writing top-level names to uf_ros_lib.egg-info/top_level.txt
+[1.529s] reading manifest file 'uf_ros_lib.egg-info/SOURCES.txt'
+[1.529s] writing manifest file 'uf_ros_lib.egg-info/SOURCES.txt'
+[1.549s] running build_ext
+[1.549s] Creating /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/install/uf_ros_lib/lib/python3.12/site-packages/uf-ros-lib.egg-link (link to .)
+[1.549s] 
+[1.550s] Installed /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/build/uf_ros_lib
+[1.550s] running symlink_data
+[1.578s] Invoked command in '/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/build/uf_ros_lib' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/build/uf_ros_lib/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/install/uf_ros_lib/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/build/uf_ros_lib/build --no-deps symlink_data
