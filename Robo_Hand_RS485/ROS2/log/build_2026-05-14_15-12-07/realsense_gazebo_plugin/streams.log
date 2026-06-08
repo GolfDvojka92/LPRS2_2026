@@ -1,0 +1,31 @@
+[0.405s] Invoking command in '/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/build/realsense_gazebo_plugin': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/xarm_ros2/thirdparty/realsense_gazebo_plugin -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/install/realsense_gazebo_plugin
+[0.496s] -- The C compiler identification is GNU 13.3.0
+[0.599s] -- The CXX compiler identification is GNU 13.3.0
+[0.625s] -- Detecting C compiler ABI info
+[0.775s] -- Detecting C compiler ABI info - done
+[0.791s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.791s] -- Detecting C compile features
+[0.793s] -- Detecting C compile features - done
+[0.812s] -- Detecting CXX compiler ABI info
+[0.991s] -- Detecting CXX compiler ABI info - done
+[1.007s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.007s] -- Detecting CXX compile features
+[1.008s] -- Detecting CXX compile features - done
+[1.028s] [31mCMake Error at CMakeLists.txt:17 (find_package):
+[1.028s]   By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project
+[1.028s]   has asked CMake to find a package configuration file provided by
+[1.028s]   "ament_cmake", but CMake did not find one.
+[1.029s] 
+[1.029s]   Could not find a package configuration file provided by "ament_cmake" with
+[1.029s]   any of the following names:
+[1.029s] 
+[1.030s]     ament_cmakeConfig.cmake
+[1.030s]     ament_cmake-config.cmake
+[1.030s] 
+[1.030s]   Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set
+[1.030s]   "ament_cmake_DIR" to a directory containing one of the above files.  If
+[1.030s]   "ament_cmake" provides a separate development package or SDK, be sure it
+[1.030s]   has been installed.
+[1.031s] 
+[1.031s] [0m
+[1.031s] -- Configuring incomplete, errors occurred!

@@ -1,0 +1,1 @@
+/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/build/mbot_demo/ament_cmake_core/mbot_demoConfig-version.cmake

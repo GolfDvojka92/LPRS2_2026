@@ -1,0 +1,69 @@
+[0.013s] Invoking command in '/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/build/xarm_api': AMENT_PREFIX_PATH=/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_sdk:/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_msgs:/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_sdk:/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_msgs:/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_sdk/lib:/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/xarm_ros2/xarm_api -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_api
+[0.070s] -- The C compiler identification is GNU 13.3.0
+[0.129s] -- The CXX compiler identification is GNU 13.3.0
+[0.146s] -- Detecting C compiler ABI info
+[0.238s] -- Detecting C compiler ABI info - done
+[0.246s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.246s] -- Detecting C compile features
+[0.246s] -- Detecting C compile features - done
+[0.255s] -- Detecting CXX compiler ABI info
+[0.362s] -- Detecting CXX compiler ABI info - done
+[0.370s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.370s] -- Detecting CXX compile features
+[0.370s] -- Detecting CXX compile features - done
+[0.375s] -- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.530s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.602s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.658s] -- Found ament_lint_auto: 0.17.4 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[0.780s] -- Found rclcpp: 28.1.16 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.840s] -- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.859s] -- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.880s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.901s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.989s] -- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.994s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[1.103s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[1.125s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[1.149s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.231s] -- Found rclcpp_action: 28.1.16 (/opt/ros/jazzy/share/rclcpp_action/cmake)
+[1.289s] -- Found std_msgs: 5.3.6 (/opt/ros/jazzy/share/std_msgs/cmake)
+[1.305s] -- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[1.348s] -- Found control_msgs: 5.7.0 (/opt/ros/jazzy/share/control_msgs/cmake)
+[1.409s] -- Found xarm_msgs: 0.0.0 (/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_msgs/share/xarm_msgs/cmake)
+[1.471s] -- Found xarm_sdk: 0.0.0 (/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_sdk/share/xarm_sdk/cmake)
+[1.493s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.496s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.496s] -- Configured cppcheck include dirs: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/xarm_ros2/xarm_api/include
+[1.496s] -- Configured cppcheck exclude dirs and/or files: 
+[1.499s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.499s] -- Configured cpplint exclude dirs and/or files: 
+[1.500s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.500s] -- Configured 'flake8' exclude dirs and/or files: 
+[1.501s] -- Added test 'lint_cmake' to check CMake code style
+[1.502s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.504s] -- Added test 'uncrustify' to check C / C++ code style
+[1.504s] -- Configured uncrustify additional arguments: 
+[1.505s] -- Added test 'xmllint' to check XML markup files
+[1.508s] -- Configuring done (1.5s)
+[1.547s] -- Generating done (0.0s)
+[1.557s] -- Build files have been written to: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/build/xarm_api
+[1.571s] Invoked command in '/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/build/xarm_api' returned '0': AMENT_PREFIX_PATH=/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_sdk:/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_msgs:/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_sdk:/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_msgs:/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_sdk/lib:/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/xarm_ros2/xarm_api -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_api
+[1.572s] Invoking command in '/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/build/xarm_api': AMENT_PREFIX_PATH=/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_sdk:/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_msgs:/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_sdk:/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_msgs:/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_sdk/lib:/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/build/xarm_api -- -j12 -l12
+[1.632s] [ 30%] [32mBuilding CXX object CMakeFiles/xarm_ros_client.dir/src/xarm_ros_client.cpp.o[0m
+[1.632s] [ 30%] [32mBuilding CXX object CMakeFiles/xarm_ros_driver.dir/src/xarm_driver_service.cpp.o[0m
+[1.632s] [ 30%] [32mBuilding CXX object CMakeFiles/xarm_ros_driver.dir/src/xarm_driver.cpp.o[0m
+[1.632s] [ 30%] [32mBuilding CXX object CMakeFiles/test_robot_states.dir/test/test_robot_states.cpp.o[0m
+[17.823s] [ 38%] [32m[1mLinking CXX executable test_robot_states[0m
+[18.518s] [ 38%] Built target test_robot_states
+[28.180s] [ 46%] [32m[1mLinking CXX shared library libxarm_ros_client.so[0m
+[29.856s] [ 46%] Built target xarm_ros_client
+[29.881s] [ 61%] [32mBuilding CXX object CMakeFiles/test_xarm_ros_client.dir/test/test_xarm_ros_client.cpp.o[0m
+[29.881s] [ 61%] [32mBuilding CXX object CMakeFiles/test_xarm_velo_move.dir/test/test_xarm_velo_move.cpp.o[0m
+[35.039s] gmake[2]: *** [CMakeFiles/test_xarm_ros_client.dir/build.make:76: CMakeFiles/test_xarm_ros_client.dir/test/test_xarm_ros_client.cpp.o] Interrupt
+[35.039s] gmake[2]: *** [CMakeFiles/test_xarm_velo_move.dir/build.make:76: CMakeFiles/test_xarm_velo_move.dir/test/test_xarm_velo_move.cpp.o] Interrupt
+[35.039s] gmake[2]: *** [CMakeFiles/xarm_ros_driver.dir/build.make:90: CMakeFiles/xarm_ros_driver.dir/src/xarm_driver_service.cpp.o] Interrupt
+[35.039s] gmake[1]: *** [CMakeFiles/Makefile2:225: CMakeFiles/test_xarm_ros_client.dir/all] Interrupt
+[35.039s] gmake[1]: *** [CMakeFiles/Makefile2:147: CMakeFiles/xarm_ros_driver.dir/all] Interrupt
+[35.040s] gmake[1]: *** [CMakeFiles/Makefile2:251: CMakeFiles/test_xarm_velo_move.dir/all] Interrupt
+[35.040s] gmake: *** [Makefile:146: all] Interrupt
+[35.226s] Invoked command in '/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/build/xarm_api' returned '-2': AMENT_PREFIX_PATH=/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_sdk:/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_msgs:/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_sdk:/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_msgs:/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_sdk/lib:/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/build/xarm_api -- -j12 -l12

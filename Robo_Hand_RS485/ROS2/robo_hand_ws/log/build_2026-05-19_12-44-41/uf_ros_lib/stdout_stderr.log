@@ -1,0 +1,13 @@
+running develop
+running egg_info
+writing uf_ros_lib.egg-info/PKG-INFO
+writing dependency_links to uf_ros_lib.egg-info/dependency_links.txt
+writing requirements to uf_ros_lib.egg-info/requires.txt
+writing top-level names to uf_ros_lib.egg-info/top_level.txt
+reading manifest file 'uf_ros_lib.egg-info/SOURCES.txt'
+writing manifest file 'uf_ros_lib.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/install/uf_ros_lib/lib/python3.12/site-packages/uf-ros-lib.egg-link (link to .)
+
+Installed /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/build/uf_ros_lib
+running symlink_data

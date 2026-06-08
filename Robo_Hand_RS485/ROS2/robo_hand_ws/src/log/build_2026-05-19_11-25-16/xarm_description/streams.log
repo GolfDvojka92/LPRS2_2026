@@ -1,0 +1,273 @@
+[0.023s] Invoking command in '/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/build/xarm_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/xarm_ros2/xarm_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description
+[0.304s] -- The C compiler identification is GNU 13.3.0
+[0.304s] -- The CXX compiler identification is GNU 13.3.0
+[0.305s] -- Detecting C compiler ABI info
+[0.305s] -- Detecting C compiler ABI info - done
+[0.309s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.310s] -- Detecting C compile features
+[0.311s] -- Detecting C compile features - done
+[0.322s] -- Detecting CXX compiler ABI info
+[0.470s] -- Detecting CXX compiler ABI info - done
+[0.481s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.481s] -- Detecting CXX compile features
+[0.482s] -- Detecting CXX compile features - done
+[0.489s] -- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.693s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.799s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.876s] -- Found ament_lint_auto: 0.17.4 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[1.049s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.088s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.088s] -- Configured 'flake8' exclude dirs and/or files: 
+[1.094s] -- Added test 'lint_cmake' to check CMake code style
+[1.097s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.118s] -- Added test 'xmllint' to check XML markup files
+[1.120s] -- Configuring done (1.1s)
+[1.125s] -- Generating done (0.0s)
+[1.127s] -- Build files have been written to: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/build/xarm_description
+[1.134s] Invoked command in '/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/build/xarm_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/xarm_ros2/xarm_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description
+[1.136s] Invoking command in '/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/build/xarm_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/build/xarm_description -- -j12 -l12
+[1.190s] Invoked command in '/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/build/xarm_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/build/xarm_description -- -j12 -l12
+[1.203s] Invoking command in '/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/build/xarm_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/build/xarm_description
+[1.218s] -- Install configuration: ""
+[1.219s] -- Execute custom install script
+[1.220s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//rviz/display.rviz
+[1.247s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//urdf/_private_macro.xacro
+[1.274s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//urdf/camera/camera.gazebo.xacro
+[1.299s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//urdf/camera/realsense.gazebo.xacro
+[1.322s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//urdf/camera/realsense_d435i.urdf.xacro
+[1.372s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//urdf/common/common.gazebo.xacro
+[1.395s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//urdf/common/common.link.xacro
+[1.416s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//urdf/common/common.material.xacro
+[1.438s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//urdf/dual_xarm_device.urdf.xacro
+[1.494s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//urdf/gripper/bio_gripper.gazebo.xacro
+[1.535s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//urdf/gripper/bio_gripper.ros2_control.xacro
+[1.577s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//urdf/gripper/bio_gripper.transmission.xacro
+[1.623s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//urdf/gripper/bio_gripper.urdf.xacro
+[1.662s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//urdf/gripper/bio_gripper_macro.xacro
+[1.713s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//urdf/gripper/gripper.urdf.xacro
+[1.771s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//urdf/gripper/gripper_macro.xacro
+[1.810s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//urdf/gripper/lite_gripper.urdf.xacro
+[1.857s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//urdf/gripper/xarm_gripper.gazebo.xacro
+[1.911s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//urdf/gripper/xarm_gripper.ros2_control.xacro
+[1.957s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//urdf/gripper/xarm_gripper.transmission.xacro
+[1.994s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//urdf/gripper/xarm_gripper.urdf.xacro
+[2.059s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//urdf/gripper/xarm_gripper_macro.xacro
+[2.110s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//urdf/lite6/lite6.gazebo.xacro
+[2.173s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//urdf/lite6/lite6.ros2_control.xacro
+[2.229s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//urdf/lite6/lite6.transmission.xacro
+[2.272s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//urdf/lite6/lite6.urdf.xacro
+[2.320s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//urdf/lite6/lite6_robot_macro.xacro
+[2.411s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//urdf/other/other_geometry.urdf.xacro
+[2.462s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//urdf/uf850/uf850.gazebo.xacro
+[2.509s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//urdf/uf850/uf850.ros2_control.xacro
+[2.537s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//urdf/uf850/uf850.transmission.xacro
+[2.586s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//urdf/uf850/uf850.urdf.xacro
+[2.634s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//urdf/uf850/uf850_robot_macro.xacro
+[2.684s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//urdf/vacuum_gripper/lite_vacuum_gripper.urdf.xacro
+[2.744s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//urdf/vacuum_gripper/vacuum_gripper.urdf.xacro
+[2.776s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//urdf/vacuum_gripper/vacuum_gripper_macro.xacro
+[2.800s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//urdf/vacuum_gripper/xarm_vacuum_gripper.urdf.xacro
+[2.825s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//urdf/xarm5/xarm5.gazebo.xacro
+[2.849s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//urdf/xarm5/xarm5.ros2_control.xacro
+[2.876s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//urdf/xarm5/xarm5.transmission.xacro
+[2.900s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//urdf/xarm5/xarm5.urdf.xacro
+[2.923s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//urdf/xarm5/xarm5_robot_macro.xacro
+[2.944s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//urdf/xarm6/xarm6.gazebo.xacro
+[2.968s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//urdf/xarm6/xarm6.ros2_control.xacro
+[2.988s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//urdf/xarm6/xarm6.transmission.xacro
+[3.012s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//urdf/xarm6/xarm6.urdf.xacro
+[3.035s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//urdf/xarm6/xarm6_robot_macro.xacro
+[3.059s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//urdf/xarm7/xarm7.gazebo.xacro
+[3.085s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//urdf/xarm7/xarm7.ros2_control.xacro
+[3.104s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//urdf/xarm7/xarm7.transmission.xacro
+[3.139s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//urdf/xarm7/xarm7.urdf.xacro
+[3.200s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//urdf/xarm7/xarm7_robot_macro.xacro
+[3.252s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//urdf/xarm7_mirror/xarm7_mirror.gazebo.xacro
+[3.305s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//urdf/xarm7_mirror/xarm7_mirror.ros2_control.xacro
+[3.355s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//urdf/xarm7_mirror/xarm7_mirror.transmission.xacro
+[3.406s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//urdf/xarm7_mirror/xarm7_mirror.urdf.xacro
+[3.467s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//urdf/xarm7_mirror/xarm7_mirror_robot_macro.xacro
+[3.511s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//urdf/xarm_device.urdf.xacro
+[3.549s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//urdf/xarm_device_macro.xacro
+[3.598s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//config/kinematics/default/lite6_default_kinematics.yaml
+[3.653s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//config/kinematics/default/uf850_default_kinematics.yaml
+[3.711s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//config/kinematics/default/xarm5_default_kinematics.yaml
+[3.744s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//config/kinematics/default/xarm6_default_kinematics.yaml
+[3.815s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//config/kinematics/default/xarm7_default_kinematics.yaml
+[3.866s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//config/kinematics/default/xarm7_mirror_default_kinematics.yaml
+[3.926s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//config/kinematics/gen_kinematics_params.py
+[3.966s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//config/link_inertial/gen_link_inertial_params.py
+[4.035s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//config/link_inertial/xarm5_type5_HT_BR.yaml
+[4.097s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//config/link_inertial/xarm5_type5_HT_BR2.yaml
+[4.147s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//config/link_inertial/xarm5_type5_HT_LD.yaml
+[4.182s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//config/link_inertial/xarm5_type5_UJ_BR_2403.yaml
+[4.231s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//config/link_inertial/xarm6_type11_HT_LD.yaml
+[4.290s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//config/link_inertial/xarm6_type12_HT_LDBR2.yaml
+[4.335s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//config/link_inertial/xarm6_type6_HT2_LD.yaml
+[4.387s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//config/link_inertial/xarm6_type6_HT_BR.yaml
+[4.441s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//config/link_inertial/xarm6_type6_HT_BR2.yaml
+[4.492s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//config/link_inertial/xarm6_type6_HT_LD.yaml
+[4.541s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//config/link_inertial/xarm6_type6_UJ_BR_2403.yaml
+[4.590s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//config/link_inertial/xarm6_type8_HT2_BR2.yaml
+[4.660s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//config/link_inertial/xarm6_type9_HT_BR2.yaml
+[4.725s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//config/link_inertial/xarm7_type13_HT_BR2.yaml
+[4.778s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//config/link_inertial/xarm7_type3_YT_SP.yaml
+[4.814s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//config/link_inertial/xarm7_type7_HT_BR.yaml
+[4.876s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//config/link_inertial/xarm7_type7_HT_BR2.yaml
+[4.916s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//config/link_inertial/xarm7_type7_HT_LD.yaml
+[4.959s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//config/link_inertial/xarm7_type7_UJ_BR_2403.yaml
+[5.006s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/camera/realsense/collision/d435_with_cam_stand.stl
+[5.034s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/camera/realsense/visual/d435_with_cam_stand.stl
+[5.086s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/end_tool/collision/end_tool.stl
+[5.147s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/end_tool/collision/end_tool_1300.stl
+[5.193s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/end_tool/visual/end_tool_1300.stl
+[5.230s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/gripper/bio/left_finger.stl
+[5.273s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/gripper/bio/link_base.stl
+[5.298s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/gripper/bio/right_finger.stl
+[5.325s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/gripper/lite/collision/gripper_lite.stl
+[5.351s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/gripper/lite/visual/gripper_lite.stl
+[5.381s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/gripper/xarm/base_link.stl
+[5.413s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/gripper/xarm/left_finger.stl
+[5.454s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/gripper/xarm/left_inner_knuckle.stl
+[5.481s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/gripper/xarm/left_outer_knuckle.stl
+[5.506s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/gripper/xarm/right_finger.stl
+[5.525s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/gripper/xarm/right_inner_knuckle.stl
+[5.543s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/gripper/xarm/right_outer_knuckle.stl
+[5.562s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/lite6/collision/link1.stl
+[5.581s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/lite6/collision/link2.stl
+[5.600s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/lite6/collision/link3.stl
+[5.618s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/lite6/collision/link4.stl
+[5.635s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/lite6/collision/link5.stl
+[5.655s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/lite6/collision/link6.stl
+[5.674s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/lite6/collision/link_base.stl
+[5.696s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/lite6/visual/link1.stl
+[5.715s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/lite6/visual/link2.stl
+[5.737s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/lite6/visual/link3.stl
+[5.758s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/lite6/visual/link4.stl
+[5.780s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/lite6/visual/link5.stl
+[5.808s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/lite6/visual/link6.stl
+[5.836s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/lite6/visual/link_base.stl
+[5.861s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/uf850/collision/link1.stl
+[5.880s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/uf850/collision/link2.stl
+[5.901s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/uf850/collision/link3.stl
+[5.920s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/uf850/collision/link4.stl
+[5.940s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/uf850/collision/link5.stl
+[5.961s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/uf850/collision/link6.stl
+[5.983s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/uf850/collision/link_base.stl
+[6.001s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/uf850/visual/link1.stl
+[6.025s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/uf850/visual/link2.stl
+[6.050s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/uf850/visual/link3.stl
+[6.074s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/uf850/visual/link4.stl
+[6.094s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/uf850/visual/link5.stl
+[6.113s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/uf850/visual/link6.stl
+[6.130s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/uf850/visual/link_base.stl
+[6.148s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/vacuum_gripper/lite/collision/vacuum_gripper_lite.stl
+[6.163s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/vacuum_gripper/lite/visual/vacuum_gripper_lite.stl
+[6.178s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/vacuum_gripper/xarm/collision/vacuum_gripper.stl
+[6.192s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/vacuum_gripper/xarm/visual/vacuum_gripper.stl
+[6.207s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/xarm5/visual/link1.stl
+[6.223s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/xarm5/visual/link2.stl
+[6.238s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/xarm5/visual/link3.stl
+[6.254s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/xarm5/visual/link4.stl
+[6.268s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/xarm5/visual/link5.stl
+[6.283s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/xarm5/visual/link_base.stl
+[6.300s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/xarm5_1305/collision/link1.obj
+[6.312s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/xarm5_1305/collision/link2.obj
+[6.327s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/xarm5_1305/collision/link3.obj
+[6.340s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/xarm5_1305/collision/link4.obj
+[6.354s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/xarm5_1305/collision/link5.obj
+[6.366s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/xarm5_1305/collision/link_base.obj
+[6.380s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/xarm5_1305/visual/link1.stl
+[6.393s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/xarm5_1305/visual/link2.stl
+[6.407s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/xarm5_1305/visual/link3.stl
+[6.419s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/xarm5_1305/visual/link4.stl
+[6.432s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/xarm5_1305/visual/link5.stl
+[6.447s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/xarm5_1305/visual/link_base.stl
+[6.461s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/xarm6/visual/link1.stl
+[6.477s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/xarm6/visual/link2.stl
+[6.492s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/xarm6/visual/link3.stl
+[6.508s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/xarm6/visual/link4.stl
+[6.524s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/xarm6/visual/link5.stl
+[6.539s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/xarm6/visual/link6.stl
+[6.556s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/xarm6/visual/link_base.stl
+[6.569s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/xarm6_1305/collision/link1.obj
+[6.582s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/xarm6_1305/collision/link2.obj
+[6.594s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/xarm6_1305/collision/link3.obj
+[6.608s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/xarm6_1305/collision/link4.obj
+[6.621s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/xarm6_1305/collision/link5.obj
+[6.634s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/xarm6_1305/collision/link6.obj
+[6.650s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/xarm6_1305/collision/link_base.obj
+[6.663s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/xarm6_1305/visual/link1.stl
+[6.676s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/xarm6_1305/visual/link2.stl
+[6.689s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/xarm6_1305/visual/link3.stl
+[6.701s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/xarm6_1305/visual/link4.stl
+[6.714s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/xarm6_1305/visual/link5.stl
+[6.727s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/xarm6_1305/visual/link6.stl
+[6.741s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/xarm6_1305/visual/link_base.stl
+[6.756s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/xarm7/visual/link1.stl
+[6.770s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/xarm7/visual/link2.stl
+[6.784s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/xarm7/visual/link3.stl
+[6.800s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/xarm7/visual/link4.stl
+[6.814s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/xarm7/visual/link5.stl
+[6.828s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/xarm7/visual/link6.stl
+[6.842s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/xarm7/visual/link7.stl
+[6.855s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/xarm7/visual/link_base.stl
+[6.867s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/xarm7_1305/collision/link1.obj
+[6.879s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/xarm7_1305/collision/link2.obj
+[6.891s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/xarm7_1305/collision/link3.obj
+[6.903s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/xarm7_1305/collision/link4.obj
+[6.915s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/xarm7_1305/collision/link5.obj
+[6.926s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/xarm7_1305/collision/link6.obj
+[6.939s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/xarm7_1305/collision/link7.obj
+[6.951s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/xarm7_1305/collision/link_base.obj
+[6.963s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/xarm7_1305/visual/link1.stl
+[6.976s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/xarm7_1305/visual/link2.stl
+[6.988s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/xarm7_1305/visual/link3.stl
+[6.999s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/xarm7_1305/visual/link4.stl
+[7.009s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/xarm7_1305/visual/link5.stl
+[7.021s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/xarm7_1305/visual/link6.stl
+[7.033s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/xarm7_1305/visual/link7.stl
+[7.047s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/xarm7_1305/visual/link_base.stl
+[7.062s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/xarm7_mirror/collision/link1.stl
+[7.078s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/xarm7_mirror/collision/link2.stl
+[7.092s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/xarm7_mirror/collision/link3.stl
+[7.107s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/xarm7_mirror/collision/link4.stl
+[7.121s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/xarm7_mirror/collision/link5.stl
+[7.132s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/xarm7_mirror/collision/link6.stl
+[7.145s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/xarm7_mirror/collision/link7.stl
+[7.158s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/xarm7_mirror/collision/link_base.stl
+[7.171s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/xarm7_mirror/visual/link1.stl
+[7.183s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/xarm7_mirror/visual/link2.stl
+[7.195s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/xarm7_mirror/visual/link3.stl
+[7.207s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/xarm7_mirror/visual/link4.stl
+[7.218s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/xarm7_mirror/visual/link5.stl
+[7.230s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/xarm7_mirror/visual/link6.stl
+[7.243s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/xarm7_mirror/visual/link7.stl
+[7.257s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//meshes/xarm7_mirror/visual/link_base.stl
+[7.270s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//launch/_robot_description.launch.py
+[7.282s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//launch/_robot_joint_state.launch.py
+[7.301s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//launch/_robot_rviz_display.launch.py
+[7.330s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//launch/_rviz_display.launch.py
+[7.345s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//launch/lib/robot_description_lib.py
+[7.365s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//launch/lite6_rviz_display.launch.py
+[7.379s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//launch/uf850_rviz_display.launch.py
+[7.392s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//launch/xarm5_rviz_display.launch.py
+[7.405s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//launch/xarm6_rviz_display.launch.py
+[7.417s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//launch/xarm7_mirror_rviz_display.launch.py
+[7.429s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description//launch/xarm7_rviz_display.launch.py
+[7.442s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/ament_index/resource_index/package_run_dependencies/xarm_description
+[7.455s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/ament_index/resource_index/parent_prefix_path/xarm_description
+[7.470s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description/environment/ament_prefix_path.sh
+[7.483s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description/environment/ament_prefix_path.dsv
+[7.495s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description/environment/path.sh
+[7.508s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description/environment/path.dsv
+[7.520s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description/local_setup.bash
+[7.533s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description/local_setup.sh
+[7.546s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description/local_setup.zsh
+[7.558s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description/local_setup.dsv
+[7.569s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description/package.dsv
+[7.581s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/ament_index/resource_index/packages/xarm_description
+[7.594s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description/cmake/xarm_descriptionConfig.cmake
+[7.605s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description/cmake/xarm_descriptionConfig-version.cmake
+[7.618s] -- Symlinking: /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/install/xarm_description/share/xarm_description/package.xml
+[7.639s] Invoked command in '/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/build/xarm_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/build/xarm_description
