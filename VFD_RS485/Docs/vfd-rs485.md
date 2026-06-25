@@ -20,10 +20,10 @@ values (frequency, voltage, current, power, torque %).
 | Item | Detail |
 |---|---|
 | VFD | SW100-series AC drive, Modbus-RTU over RS-485 |
-| Motor | Three-phase asynchronous (induction) motor — `[TODO: power rating, voltage, pole count]` |
+| Motor | Asynchronous AC motor — `[1PH 220V/3PH 380V, 0.55kW - 0.75HP]` |
 | RS-485 adapter | USB-RS485 dongle |
 | Host | PC, Python 3 + `pymodbus` |
-| Mains supply | Three-phase outlet — 380V 3PH |
+| Mains supply | 3PH 380V |
 
 VFD communication settings used (all left at factory default — see §5):
 
@@ -49,6 +49,40 @@ to rule out dongle or driver issues before introducing the drive itself.
 Testing was done using the serial motor of the Arduino IDE.
 
 | ![Hi from PC](./images/hi_from_pc.png) | ![Hi from microcontroller](./images/hi_from_micro.jpeg) |
+
+Test code:
+
+```Arduino:RS485_micro_dongle_test.ino
+#include <SoftwareSerial.h>
+
+#define DE_RE_PIN 8
+#define RS485_RX  3   // RO → pin 3
+#define RS485_TX  2   // DI → pin 2
+
+SoftwareSerial RS485(RS485_RX, RS485_TX);
+
+void setup() {
+  Serial.begin(9600);
+  RS485.begin(9600);
+  pinMode(DE_RE_PIN, OUTPUT);
+  digitalWrite(DE_RE_PIN, LOW);  // Start in receive mode
+}
+
+void loop() {
+  if (Serial.available()) {
+    String msg = Serial.readStringUntil('\n');
+    digitalWrite(DE_RE_PIN, HIGH);  //  setting to send mode
+    RS485.println(msg);
+    delay(10);
+    digitalWrite(DE_RE_PIN, LOW);   //  setting back to receive
+  }
+
+  if (RS485.available()) {
+    String incoming = RS485.readStringUntil('\n');
+    Serial.println("Received: " + incoming);
+  }
+}
+```
 
 ### 3.2 Wiring the VFD to a three-phase outlet
 
