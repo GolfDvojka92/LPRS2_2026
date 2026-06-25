@@ -13,9 +13,10 @@ class VFD:
 
     # WRITE
     SET_FREQUENCY_REG               = 0x1000
-    SET_POWER_REG                   = 0x2000
+    CONTROL_COMMAND_REG             = 0x2000
 
-    VALUE_START                     = 0x0001
+    VALUE_FOR                       = 0x0001
+    VALUE_REV                       = 0x0002
     VALUE_STOP                      = 0x0006
 
     def __init__(self):
@@ -35,13 +36,13 @@ class VFD:
             print("Connected successfully")
 
     def run(self):
-        self.instance.write_register(address = self.SET_POWER_REG, value = self.VALUE_START)
+        self.instance.write_register(address = self.CONTROL_COMMAND_REG, value = self.VALUE_FOR)
 
     def stop(self):
-        self.instance.write_register(address = self.SET_POWER_REG, value = self.VALUE_STOP)
+        self.instance.write_register(address = self.CONTROL_COMMAND_REG, value = self.VALUE_STOP)
 
     def setFrequency(self, v):
-        self.instance.write_register(address = self.SET_FREQUENCY_REG, value = v)
+        self.instance.write_register(address = self.SET_FREQUENCY_REG, value = v / 100)
 
     def getReadings(self):
         value = self.instance.read_holding_registers(address = self.OPERATING_FREQ_REG)
