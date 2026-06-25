@@ -1,7 +1,4 @@
-from typing import cast
-
 from pymodbus.client import ModbusSerialClient
-import time
 
 class VFD:
     # READ ONLY
@@ -35,18 +32,22 @@ class VFD:
         else:
             print("Connected successfully")
 
-    def run(self):
+    def run_for(self):
         self.instance.write_register(address = self.CONTROL_COMMAND_REG, value = self.VALUE_FOR)
+
+    def run_rev(self):
+        self.instance.write_register(address = self.CONTROL_COMMAND_REG, value = self.VALUE_REV)
 
     def stop(self):
         self.instance.write_register(address = self.CONTROL_COMMAND_REG, value = self.VALUE_STOP)
 
     def setFrequency(self, v):
-        self.instance.write_register(address = self.SET_FREQUENCY_REG, value = v / 100)
+        self.instance.write_register(address = self.SET_FREQUENCY_REG, value = int(v * 100))
 
     def getReadings(self):
         value = self.instance.read_holding_registers(address = self.OPERATING_FREQ_REG)
-        print(f"Operating frequency: {value.registers[0]}Hz")
+        valueInHz = float(value.registers[0]) / 100
+        print(f"Operating frequency: {valueInHz:.2f}Hz")
         value = self.instance.read_holding_registers(address = self.OUTPUT_VOLTAGE_REG)
         print(f"Output voltage: {value.registers[0]}V")
         value = self.instance.read_holding_registers(address = self.OUTPUT_CURRENT_REG)
@@ -56,32 +57,44 @@ class VFD:
         value = self.instance.read_holding_registers(address = self.OUTPUT_TORQUE_PERCENTAGE_REG)
         print(f"Output torque percentage: {value.registers[0]}%")
 
+    def help(self):
+        print("Commands:")
+        print(f"\t'run_for' \t-> starts the VFD in the forwards direction")
+        print(f"\t'run_rev' \t-> starts the VFD in the backwards direction")
+        print(f"\t'stop' \t-> stops the VFD")
+        print(f"\t'set <value>' \t-> sets the running frequency to <value> (max 50.00Hz)")
+        print(f"\t'status' \t-> prints current output parameters")
+        print(f"\t'help' \t-> prints this help screen")
+        print(f"\t'quit' \t-> exits the controller, along with setting the running frequency to 0 and stopping the VFD")
+
 if __name__== "__main__":
     vfd = VFD()
     vfd.connect()
-    vfd.run()
-    vfd.setFrequency(0)
-    vfd.getReadings()
+    print("Commands: 'run_for', 'rev', 'stop', 'set <value>', 'status', 'help', 'quit'")
     while True:
-        try:
-            v = int(input("Target frequency (-1 -> stop):"))
-            if v == -1:
-                vfd.stop()
-                break
-            else:
-                vfd.setFrequency(v)
-                value = vfd.instance.read_holding_registers(address = vfd.OPERATING_FREQ_REG)
-                target = value.registers[0]
-                if target < v:
-                    while value.registers[0] < v:
-                        print(f"Operating frequency: {value.registers[0]}Hz")
-                        time.sleep(1)
-                        value = vfd.instance.read_holding_registers(address = vfd.OPERATING_FREQ_REG)
-                else:
-                    while value.registers[0] > v:
-                        print(f"Operating frequency: {value.registers[0]}Hz")
-                        time.sleep(1)
-                        value = vfd.instance.read_holding_registers(address = vfd.OPERATING_FREQ_REG)
-                vfd.getReadings()
-        except ValueError:
-            print("Invalid input")
+        command = input().strip()
+        if command.startswith("set "):
+            try:
+                value = float(command.split(" ")[1])
+                if value < 0 or value > 50:
+                    raise ValueError
+                vfd.setFrequency(value)
+                print(f"Reading set to {value:.2f}Hz")
+            except (IndexError, ValueError):
+                print("Usage: set <value>, 0.00 <= <value> <= 50.00")
+        elif command == "run_for":
+            vfd.run_for()
+        elif command == "run_rev":
+            vfd.run_rev()
+        elif command == "stop":
+            vfd.stop()
+        elif command == "status":
+            vfd.getReadings()
+        elif command == "help":
+            vfd.help()
+        elif command == "quit":
+            vfd.setFrequency(0)
+            vfd.stop()
+            break
+        else:
+            print("Invalid command")
