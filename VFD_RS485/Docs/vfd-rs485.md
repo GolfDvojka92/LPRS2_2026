@@ -48,11 +48,11 @@ to rule out dongle or driver issues before introducing the drive itself.
 
 Testing was done using the serial motor of the Arduino IDE.
 
-| ![Hi from PC](./images/hi_from_pc.png) | ![Hi from microcontroller](./images/hi_from_micro.jpeg) |
+![Hi from PC](./images/hi_from_pc.png) ![Hi from microcontroller](./images/hi_from_micro.jpeg)
 
 Test code:
 
-```Arduino:RS485_micro_dongle_test.ino
+```
 #include <SoftwareSerial.h>
 
 #define DE_RE_PIN 8
@@ -96,7 +96,7 @@ The drive's mains input was wired to a three-phase outlet per its nameplate rati
 
 The dongle's A/B (D+/D−) lines were connected to the VFD's RS-485 terminals.
 
-![Outlet wiring](./images/outlet_wiring.png)
+<img src="./images/outlet_wiring.png" width="50%" alt="Outlet wiring">
 
 ### 3.4 Establishing a connection and reading first values
 
@@ -133,7 +133,7 @@ and exits.
 With communication control verified on an unloaded drive, the output terminals (U/V/W)
 were wired to the eponymous terminals on the motor.
 
-`TODO: slika terminala sa na motoru`
+`TODO: slika terminala na motoru`
 
 ### 3.8 Re-running tests after wiring the motor
 
@@ -145,9 +145,8 @@ No issues were present.
 
 ### 3.9 Cleaning up the Python controller
 
-After a successful test run, the ad-hoc script was refactored into the reusable `VFD`
-class shown in §6: `connect()`, `run()`, `stop()`, `setFrequency()`, and `getReadings()`,
-as well as a CLI under `if __name__ == "__main__"`.
+After a successful test run, the ad-hoc script was refactored into a reusable `VFD` 
+class with a CLI implementation
 
 ## 4. Modbus Register Map (as used by the controller)
 
