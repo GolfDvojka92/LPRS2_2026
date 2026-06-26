@@ -1,15 +1,13 @@
 # RS-485 Modbus Control of a VFD-Driven Asynchronous Motor
 
-**Status:** Draft — sections marked `[TODO]` need project-specific details filled in.
+**Status:** Done - check out the demo video [here](https://youtube.com/shorts/K-A4y2HU37A?feature=share)
 
 ## 1. Overview
 
 This project replaces the front-panel control of a VFD (variable frequency drive) with
 direct control over an RS-485 / Modbus-RTU link from a PC, in order to start/stop and
 set the speed of a three-phase asynchronous AC motor programmatically. The VFD is a
-generic SW100-series AC drive (the manual ships with the model code masked as `XXX-`,
-so the exact part number should be read off the nameplate — `[TODO: fill in exact model,
-e.g. XXX-1R5G3 from the nameplate]`).
+generic SW100-series AC drive.
 
 Final result: `vfd_rs485_controller.py`, a small `VFD` class wrapping `pymodbus` that can
 connect to the drive, start/stop it, set a target frequency, and read back live operating
@@ -19,7 +17,7 @@ values (frequency, voltage, current, power, torque %).
 
 | Item | Detail |
 |---|---|
-| VFD | SW100-series AC drive, Modbus-RTU over RS-485 |
+| VFD | SW100-1R5G3B AC drive, Modbus-RTU over RS-485 |
 | Motor | Asynchronous AC motor — `[1PH 220V/3PH 380V, 0.55kW - 0.75HP]` |
 | RS-485 adapter | USB-RS485 dongle |
 | Host | PC, Python 3 + `pymodbus` |
@@ -133,7 +131,7 @@ and exits.
 With communication control verified on an unloaded drive, the output terminals (U/V/W)
 were wired to the eponymous terminals on the motor.
 
-`TODO: slika terminala na motoru`
+![Motor wiring on VFD](./images/motor_wiring_on_vfd.jpg) ![Motor wiring on motor](./images/motor_wiring_on_motor.jpg)
 
 ### 3.8 Re-running tests after wiring the motor
 
