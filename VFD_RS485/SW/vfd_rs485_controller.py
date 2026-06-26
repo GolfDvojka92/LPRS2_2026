@@ -12,8 +12,9 @@ class VFD:
     SET_FREQUENCY_REG               = 0x1000
     CONTROL_COMMAND_REG             = 0x2000
 
+    # CONTROL COMMANDS
     VALUE_FOR                       = 0x0001
-    VALUE_REV                       = 0x0002
+    VALUE_REV                       = 0x0002    # unused
     VALUE_STOP                      = 0x0006
 
     def __init__(self):
@@ -35,6 +36,7 @@ class VFD:
     def run_for(self):
         self.instance.write_register(address = self.CONTROL_COMMAND_REG, value = self.VALUE_FOR)
 
+    # unused
     def run_rev(self):
         self.instance.write_register(address = self.CONTROL_COMMAND_REG, value = self.VALUE_REV)
 
@@ -60,41 +62,46 @@ class VFD:
     def help(self):
         print("Commands:")
         print(f"\t'run_for' \t-> starts the VFD in the forwards direction")
-        print(f"\t'run_rev' \t-> starts the VFD in the backwards direction")
+        # print(f"\t'run_rev' \t-> starts the VFD in the backwards direction")      -> unused
         print(f"\t'stop' \t-> stops the VFD")
         print(f"\t'set <value>' \t-> sets the running frequency to <value> (max 50.00Hz)")
         print(f"\t'status' \t-> prints current output parameters")
         print(f"\t'help' \t-> prints this help screen")
         print(f"\t'quit' \t-> exits the controller, along with setting the running frequency to 0 and stopping the VFD")
 
+
 if __name__== "__main__":
     vfd = VFD()
     vfd.connect()
-    print("Commands: 'run_for', 'rev', 'stop', 'set <value>', 'status', 'help', 'quit'")
-    while True:
-        command = input().strip()
-        if command.startswith("set "):
-            try:
-                value = float(command.split(" ")[1])
-                if value < 0 or value > 50:
-                    raise ValueError
-                vfd.setFrequency(value)
-                print(f"Reading set to {value:.2f}Hz")
-            except (IndexError, ValueError):
-                print("Usage: set <value>, 0.00 <= <value> <= 50.00")
-        elif command == "run_for":
-            vfd.run_for()
-        elif command == "run_rev":
-            vfd.run_rev()
-        elif command == "stop":
-            vfd.stop()
-        elif command == "status":
-            vfd.getReadings()
-        elif command == "help":
-            vfd.help()
-        elif command == "quit":
-            vfd.setFrequency(0)
-            vfd.stop()
-            break
-        else:
-            print("Invalid command")
+    print("Commands: 'run for', 'stop', 'set <value>', 'status', 'help', 'quit'")
+    try:
+        while True:
+            command = input().strip()
+            if command.startswith("set "):
+                try:
+                    value = float(command.split(" ")[1])
+                    if value < 0 or value > 50:
+                        raise ValueError
+                    vfd.setFrequency(value)
+                    print(f"Reading set to {value:.2f}Hz")
+                except (IndexError, ValueError):
+                    print("Usage: set <value>, 0.00 <= <value> <= 50.00")
+            elif command == "run for":
+                vfd.run_for()
+            elif command == "stop":
+                vfd.stop()
+            elif command == "status":
+                vfd.getReadings()
+            elif command == "help":
+                vfd.help()
+            elif command == "quit":
+                print("Exiting the controller")
+                vfd.setFrequency(0)
+                vfd.stop()
+                break
+            else:
+                print("Invalid command")
+    except KeyboardInterrupt:
+        print("Exiting the controller")
+        vfd.setFrequency(0)
+        vfd.stop()
