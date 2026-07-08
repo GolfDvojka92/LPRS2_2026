@@ -1,7 +1,0 @@
-gmake[2]: *** [CMakeFiles/test_xarm_ros_client.dir/build.make:76: CMakeFiles/test_xarm_ros_client.dir/test/test_xarm_ros_client.cpp.o] Interrupt
-gmake[2]: *** [CMakeFiles/test_xarm_velo_move.dir/build.make:76: CMakeFiles/test_xarm_velo_move.dir/test/test_xarm_velo_move.cpp.o] Interrupt
-gmake[2]: *** [CMakeFiles/xarm_ros_driver.dir/build.make:90: CMakeFiles/xarm_ros_driver.dir/src/xarm_driver_service.cpp.o] Interrupt
-gmake[1]: *** [CMakeFiles/Makefile2:225: CMakeFiles/test_xarm_ros_client.dir/all] Interrupt
-gmake[1]: *** [CMakeFiles/Makefile2:147: CMakeFiles/xarm_ros_driver.dir/all] Interrupt
-gmake[1]: *** [CMakeFiles/Makefile2:251: CMakeFiles/test_xarm_velo_move.dir/all] Interrupt
-gmake: *** [Makefile:146: all] Interrupt

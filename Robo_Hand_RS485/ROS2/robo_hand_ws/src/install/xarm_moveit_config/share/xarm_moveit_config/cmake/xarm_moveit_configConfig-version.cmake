@@ -1,1 +1,0 @@
-/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/build/xarm_moveit_config/ament_cmake_core/xarm_moveit_configConfig-version.cmake

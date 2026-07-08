@@ -1,1 +1,0 @@
-/home/berenic/Documents/LPRS2_2026/Robo_Hand_RS485/ROS2/robo_hand_ws/src/build/xarm_msgs/rosidl_typesupport_introspection_c/xarm_msgs/srv/detail/get_float32__rosidl_typesupport_introspection_c.h
